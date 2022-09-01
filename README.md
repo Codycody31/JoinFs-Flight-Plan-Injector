@@ -90,7 +90,7 @@ This project was started by Vahn Gomes for the FSHS and TFL Discord groups. The 
 * [![CSS][CSS.com]][CSS-url]
 * [![C#][C#]][C#-url]
 * [![JQuery][JQuery.com]][JQuery-url]
-
+* [![.net][.net]][.net-url]
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -226,3 +226,6 @@ Project Link: [https://github.com/Codycody31/FSHS-Whazzup-Updater](https://githu
 
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+
+[.net]: https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white
+[.net-url]: https://dotnet.microsoft.com/en-us/
