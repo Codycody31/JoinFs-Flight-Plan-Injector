@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -60,12 +61,20 @@ namespace FSHS_Desktop_ATC
         {
             for(int i = 0; i < 600; i++)
             {
-                MessageBox.Show("Calling");
                 whazzup_tfl.UpdateWithFlightPlans();
                 //Update every 15 seconds
                 Thread.Sleep(15000);
             }
-            ATC_Display_Data();
+            CheckATC();
+            
+        }
+        void CheckATC()
+        {
+            if (Process.GetProcessesByName("vrc").Length > 0)
+            {
+                // Is running
+                ATC_Display_Data();
+            }
         }
 
         private void SpecifyWhazzupLocation_Checked(object sender, RoutedEventArgs e)
@@ -85,6 +94,7 @@ namespace FSHS_Desktop_ATC
             executeMethod = !executeMethod;
             if(executeMethod == true)
             {
+                whazzup whazzup_tfl = new whazzup();
                 ButtonControlStartStop.Background = Brushes.Red;
                 ButtonControlStartStop.Content = "STOP";
                 whazzup_tfl.WriteClients();

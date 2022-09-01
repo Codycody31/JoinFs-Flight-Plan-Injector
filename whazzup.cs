@@ -41,6 +41,20 @@ namespace FSHS_Desktop_ATC
                 return m.Groups[0].Value;
             }else{return "failed";}
         }
+        public string WhazzupRead(string callsign)
+        {
+            var MyIni = new IniFile();
+            var path = MyIni.Read("whazzup", "Data");
+            StreamReader whazzup = new StreamReader(File.OpenRead(path));
+            string whazzup_content = whazzup.ReadToEnd();
+            whazzup.Close();
+            Match m = Regex.Match(whazzup_content, "^" + callsign + ".*", RegexOptions.Multiline);
+            if (m.Success)
+            {
+                return m.Groups[0].Value;
+            }
+            else { return "failed"; }
+        }
         public bool ReadCallsignExists(string callsign)
         {
             var MyIni = new IniFile();
@@ -90,69 +104,103 @@ namespace FSHS_Desktop_ATC
             //iterate list of aircraft
             for (int i = 1; i < CLIENTSAircraft.Length - 1; i++)
             {
+                reader.Read();
                 //skip 0 
                 string[] WhazzupAircraftInfo = CLIENTSAircraft[i].Split(':');
-            }
-            conn.Close();
-            con.Close();
-            //get callsign
-            //check if callsign in database
-            //if in database
-            //append with details to whazzup
-            //if not in database
-            //append or replace in whazzup
-
-            /*
-            while (reader.Read())
-            {
-                if (ReadCallsignExists(reader.GetString("callsign")) == true)
+                if (WhazzupAircraftInfo[0] == reader.GetString("callsign"))
                 {
-                    if (!Read(reader.GetString("callsign")).Contains(reader.GetString("departure")) 
-                        && reader.GetString("departure") != null && reader.GetString("departure") != "")
-                    {
-                        string[] WhazzupAircraftInfo = Read(reader.GetString("callsign")).Split(':');
-                        /* 1 Callsign
-                         * 2 VID
-                         * 3 Name
-                         * 4 Client Type
-                         * 5 Frequency
-                         * 6 Latitude
-                         * 7 Longitude
-                         * 8 Altitude
-                         * 9 Ground Speed
-                         * 10 Flightplan: Aircraft
-                         * 11 Flightplan: Cruising Speed
-                         * 11 Flightplan: Departure Aerodrome
-                         * 12 Flightplan: Cruising Level
-                         * 13 Flightplan: Destination Aerodrome
-                         * 18 Transponder Code
-                         * 22 Flightplan: flight rules
-                         * 28 Flightplan: Alternate Aerodrome
-                         * 29 Flightplan: item 18 (other info)
-                         * 30 Flightplan: route
-                         */
-                         /*
-                        WhazzupAircraftInfo[11] = reader.GetString("departure");
-                        WhazzupAircraftInfo[13] = reader.GetString("arrival");
-                        WhazzupAircraftInfo[29] = reader.GetString("remarks");
-                        WhazzupAircraftInfo[30] = reader.GetString("route");
-                        string restOfArray = string.Join(":", WhazzupAircraftInfo);
-                        File.WriteAllText("Whazzup_TFL.txt", File.ReadAllText("whazzup_TFL.txt").Replace(Read(reader.GetString("callsign")), restOfArray));
-                    }
-                    else
-                    {
-                        MessageBox.Show("Other error");
-                    }
+                    /* 1 Callsign
+                    * 2 VID
+                    * 3 Name
+                    * 4 Client Type
+                    * 5 Frequency
+                    * 6 Latitude
+                    * 7 Longitude
+                    * 8 Altitude
+                    * 9 Ground Speed
+                    * 10 Flightplan: Aircraft
+                    * 11 Flightplan: Cruising Speed
+                    * 11 Flightplan: Departure Aerodrome
+                    * 12 Flightplan: Cruising Level
+                    * 13 Flightplan: Destination Aerodrome
+                    * 18 Transponder Code
+                    * 22 Flightplan: flight rules
+                    * 28 Flightplan: Alternate Aerodrome
+                    * 29 Flightplan: item 18 (other info)
+                    * 30 Flightplan: route
+                    */
+                    WhazzupAircraftInfo[11] = reader.GetString("departure");
+                    WhazzupAircraftInfo[13] = reader.GetString("arrival");
+                    WhazzupAircraftInfo[29] = reader.GetString("remarks");
+                    WhazzupAircraftInfo[30] = reader.GetString("route");
+                    string ReJoinedWhazzupAircraftInfo = string.Join(":", WhazzupAircraftInfo);
+                    File.WriteAllText("Whazzup_TFL.txt", File.ReadAllText("whazzup_TFL.txt").Replace(CLIENTSAircraft[i].ToString(), WhazzupRead(WhazzupAircraftInfo[0].ToString())));
                 }
                 else
                 {
+                    File.WriteAllText("Whazzup_TFL.txt", File.ReadAllText("whazzup_TFL.txt").Replace(CLIENTSAircraft[i].ToString(), WhazzupRead(WhazzupAircraftInfo[0]).ToString()));
                 }
-                
             }
             conn.Close();
-            */
-        }
-        public void DeleteClients(string whazzupPath = null)
+            con.Close();
+               //get callsign
+               //check if callsign in database
+               //if in database
+               //append with details to whazzup
+               //if not in database
+               //append or replace in whazzup
+
+               /*
+               while (reader.Read())
+               {
+                   if (ReadCallsignExists(reader.GetString("callsign")) == true)
+                   {
+                       if (!Read(reader.GetString("callsign")).Contains(reader.GetString("departure")) 
+                           && reader.GetString("departure") != null && reader.GetString("departure") != "")
+                       {
+                           string[] WhazzupAircraftInfo = Read(reader.GetString("callsign")).Split(':');
+                           /* 1 Callsign
+                            * 2 VID
+                            * 3 Name
+                            * 4 Client Type
+                            * 5 Frequency
+                            * 6 Latitude
+                            * 7 Longitude
+                            * 8 Altitude
+                            * 9 Ground Speed
+                            * 10 Flightplan: Aircraft
+                            * 11 Flightplan: Cruising Speed
+                            * 11 Flightplan: Departure Aerodrome
+                            * 12 Flightplan: Cruising Level
+                            * 13 Flightplan: Destination Aerodrome
+                            * 18 Transponder Code
+                            * 22 Flightplan: flight rules
+                            * 28 Flightplan: Alternate Aerodrome
+                            * 29 Flightplan: item 18 (other info)
+                            * 30 Flightplan: route
+                            */
+                            /*
+                           WhazzupAircraftInfo[11] = reader.GetString("departure");
+                           WhazzupAircraftInfo[13] = reader.GetString("arrival");
+                           WhazzupAircraftInfo[29] = reader.GetString("remarks");
+                           WhazzupAircraftInfo[30] = reader.GetString("route");
+                           string restOfArray = string.Join(":", WhazzupAircraftInfo);
+                           File.WriteAllText("Whazzup_TFL.txt", File.ReadAllText("whazzup_TFL.txt").Replace(Read(reader.GetString("callsign")), restOfArray));
+                       }
+                       else
+                       {
+                           MessageBox.Show("Other error");
+                       }
+                   }
+                   else
+                   {
+                   }
+
+               }
+               conn.Close();
+               */
+                        }
+                        public void DeleteClients(string whazzupPath = null)
         {
             File.Delete(whazzupPath + "whazzup_TFL.txt");
         }
