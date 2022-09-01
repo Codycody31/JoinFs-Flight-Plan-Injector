@@ -21,13 +21,13 @@
         <CheckBox Checked="SpecifyWhazzupLocation_Checked" Unchecked="SpecifyWhazzupLocation_UnChecked" x:Name="SpecifyWhazzupLocation" Content="Specify Whazzup Location" Foreground="Wheat" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Height="15" Width="158"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="dev.fshs.info" VerticalAlignment="Top" FontSize="10" Foreground="Wheat" Width="64" Height="13"/>
         <Label Content="Data Source" HorizontalAlignment="Left" Margin="148,10,0,0" Foreground="Wheat" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="26"/>
-        <CheckBox Content="JoinFs" Foreground="Wheat" HorizontalAlignment="Left" Margin="160,37,0,0" Grid.Row="1" VerticalAlignment="Top" Height="15" Width="52"/>
+        <CheckBox x:Name="JoinFs" Content="JoinFs" Foreground="Wheat" HorizontalAlignment="Left" Margin="160,37,0,0" Grid.Row="1" VerticalAlignment="Top" Height="15" Width="52"/>
         <Button x:Name="ButtonControlStartStop" Click="StartStop_Clicked" Content="START" Background="Green" HorizontalAlignment="Left" Margin="10,23,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="48"/>
         <Button Content="CLOSE" Click="Close_Click" HorizontalAlignment="Left" Margin="63,23,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="48"/>
         <TextBlock HorizontalAlignment="Left" Margin="145,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="By Vahn Gomes" VerticalAlignment="Top" FontSize="10" Foreground="Wheat" Width="78" Height="13"/>
         <Label Content="FSHS Whazzup Updater" HorizontalAlignment="Left" Margin="5,3,0,0" VerticalAlignment="Top" Foreground="Wheat" Height="34" Width="135" Grid.RowSpan="2"/>
         <Separator Margin="0,17,0,167" Foreground="Wheat" Grid.RowSpan="2"/>
-        <CheckBox Content="TFL" HorizontalAlignment="Left" Margin="160,57,0,0" Foreground="Wheat" Grid.Row="1" VerticalAlignment="Top"/>
+        <CheckBox x:Name="TFL" Content="TFL" HorizontalAlignment="Left" Margin="160,57,0,0" Foreground="Wheat" Grid.Row="1" VerticalAlignment="Top"/>
         <Button Content="Update" Click="Update_Click" Height="28" Width="48" HorizontalAlignment="Left" Margin="167,142,0,0" Grid.Row="1" VerticalAlignment="Top"/>
     </Grid>
 </Window>

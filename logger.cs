@@ -11,23 +11,33 @@ namespace FSHS_Desktop_ATC
     class logger
     {
         string path;
-        public logger(string LoggerPath = null)
+        public logger()
         {
-            string path = DateTime.Now.ToString("yyyyMMddHHmmss") + "-log.txt";
-            File.CreateText(path);
-        }
-        public void info(string log)
-        {
-            using (StreamWriter sw = File.AppendText(path))
+            string path = "log.txt";
+            if (!File.Exists("log.txt"))
             {
-                sw.WriteLine(DateTime.Now.ToString("ddHHmmss") + "|Info|" + log.ToString());
+                File.CreateText(path);
+            }        
+        }
+        public void info(string log, string source, string sourcefunction)
+        {
+            using (StreamWriter stream = new FileInfo(path).AppendText())
+            {
+                stream.WriteLine(DateTime.Now.ToString("ddHHmmss") + " INFO : " + source + " : " + sourcefunction + " : " + log);
             }
         }
-        public void error(string log)
+        public void error(string log, string source, string sourcefunction)
         {
-            using (StreamWriter sw = File.AppendText(path))
+            using (StreamWriter stream = new FileInfo(path).AppendText())
             {
-                sw.WriteLine(DateTime.Now.ToString("ddHHmmss") + "|Error|" + log.ToString());
+                stream.WriteLine(DateTime.Now.ToString("ddHHmmss") + " ERROR : " + source + " : " + sourcefunction + " : " + log);
+            }
+        }
+        public void status(string log, string source, string sourcefunction)
+        {
+            using (StreamWriter stream = new FileInfo(path).AppendText())
+            {
+                stream.WriteLine(DateTime.Now.ToString("ddHHmmss") + " STATUS : " + source + " : " + sourcefunction + " : " + log);
             }
         }
     }
