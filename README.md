@@ -88,7 +88,7 @@ This project was started by Vahn Gomes for the FSHS Discord group. The site is o
 * [![Javascript][javascript.com]][javascript-url]
 * [![HTML][HTML.com]][HTML-url]
 * [![CSS][CSS.com]][CSS-url]
-* [![Next][Next.js]][Next-url]
+* [![C#][C#]][C#-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -216,6 +216,9 @@ Project Link: [https://github.com/Codycody31/FSHS-PHP](https://github.com/Codyco
 
 [PHP.net]: https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white
 [PHP-url]: https://www.php.net/
+
+[C#]: https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white
+[C#-url]: https://docs.microsoft.com/en-us/dotnet/csharp/
 
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
