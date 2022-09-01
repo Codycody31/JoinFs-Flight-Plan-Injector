@@ -108,7 +108,7 @@ To get a local copy up and running follow these simple steps.
   ```
 * Visual Studio 2022
   ```sh
-  
+  https://visualstudio.microsoft.com/vs/
   ```
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -116,7 +116,7 @@ To get a local copy up and running follow these simple steps.
 
 FSHS Whazzup Updater acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!
 
-_For more examples, please refer to the [Documentation](https://docs.fshs.info)_
+_For more examples, please refer to the [Documentation](https://dev.fshs.info/products/whazzup-updater/documentation)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -125,14 +125,14 @@ _For more examples, please refer to the [Documentation](https://docs.fshs.info)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Login
-    - [ ] Faster Login Speed 
-- [ ] Register
-    - [ ] Email Validation
-    - [ ] Better encryption for passwords
-- [ ] Account
-    - [ ] Faster load speed
-    - [ ] Use of JQUERY to make usage easier
+- [ ] JoinFs
+    - [ ] Update Aircraft with Flightplans | Local
+- [ ] TFL
+    - [ ] Get flightplans from database
+    - [ ] Update flightplans with info from radar scope
+- [ ] FSX
+    - [ ] Update Aircraft with Flightplans using FSUIPC| Local
+    - [ ] Convert aircraft info to whazzup File
 
 See the [open issues](https://github.com/Codycody31/FSHS-Whazzup-Updater/issues) for a full list of proposed features (and known issues).
 
