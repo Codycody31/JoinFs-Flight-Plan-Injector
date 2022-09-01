@@ -77,7 +77,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://fshs.info)
 This project was started by Vahn Gomes for the FSHS and TFL Discord groups. The FSHS Whazzup Updater acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
