@@ -26,8 +26,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Codycody31/FSHS-PHP">
-    <img src="images/logo/Logo2.jpg" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Codycody31/FSHS-Whazzup-Updater">
+    <img src="lib/images/Logo2.ico" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">FSHS PHP Website</h3>
@@ -35,14 +35,14 @@
   <p align="center">
     The FSHS Website offical setup, only to be used by FSHS Board members
     <br />
-    <a href="https://github.com/Codycody31/FSHS-PHP"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Codycody31/FSHS-Whazzup-Updater"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://fshs.info">View Demo</a>
+    <a href="https://dev.fshs.info/products/whazzup-updater">View Demo</a>
     ·
-    <a href="https://github.com/Codycody31/FSHS-PHP/issues">Report Bug</a>
+    <a href="https://github.com/Codycody31/FSHS-Whazzup-Updater/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Codycody31/FSHS-PHP/issues">Request Feature</a>
+    <a href="https://github.com/Codycody31/FSHS-Whazzup-Updater/issues">Request Feature</a>
   </p>
 </div>
 
