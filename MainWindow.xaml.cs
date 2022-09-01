@@ -28,7 +28,6 @@ namespace FSHS_Desktop_ATC
         bool executeMethod;
         whazzup whazzup_tfl = new whazzup();
         IniFile MyIni = new IniFile();
-        BackgroundWorker worker = new BackgroundWorker();
         public MainWindow()
         {
             InitializeComponent();
@@ -50,33 +49,47 @@ namespace FSHS_Desktop_ATC
                 MessageBox.Show("whazzup file location invalid!");
             }
         }
-        public void ATC_Display_Data()
+        public void ATC_Display_Data(bool cancel = false)
         {
-            worker.WorkerReportsProgress = false;
-            worker.WorkerSupportsCancellation = true;
-            worker.DoWork += worker_DoWork;
-            worker.RunWorkerAsync();
+            BackgroundWorker worker = new BackgroundWorker();
+            if (cancel == true)
+            {
+                worker.WorkerReportsProgress = false;
+                worker.WorkerSupportsCancellation = true;
+                worker.DoWork += worker_DoWork;
+                worker.CancelAsync();
+            }
+            else
+            {
+                worker.WorkerReportsProgress = false;
+                worker.WorkerSupportsCancellation = true;
+                worker.DoWork += worker_DoWork;
+                worker.RunWorkerAsync();
+            }
         }
         void worker_DoWork(object sender, DoWorkEventArgs e)
         {
             for(int i = 0; i < 600; i++)
             {
                 whazzup_tfl.UpdateWithFlightPlans();
-                //Update every 15 seconds
-                Thread.Sleep(15000);
+                //MessageBox.Show(i.ToString());
+                //Update every 1 seconds
+                Thread.Sleep(1000);
             }
-            CheckATC();
-            
+            CheckATC();  
         }
         void CheckATC()
         {
-            if (Process.GetProcessesByName("vrc").Length > 0)
+            if (Process.GetProcessesByName("VRC").Length > 0)
             {
                 // Is running
                 ATC_Display_Data();
             }
+            else
+            {
+                ATC_Display_Data(true);
+            }
         }
-
         private void SpecifyWhazzupLocation_Checked(object sender, RoutedEventArgs e)
         {
             WhazzupLocation.IsEnabled = true;
@@ -94,7 +107,6 @@ namespace FSHS_Desktop_ATC
             executeMethod = !executeMethod;
             if(executeMethod == true)
             {
-                whazzup whazzup_tfl = new whazzup();
                 ButtonControlStartStop.Background = Brushes.Red;
                 ButtonControlStartStop.Content = "STOP";
                 whazzup_tfl.WriteClients();
@@ -104,13 +116,14 @@ namespace FSHS_Desktop_ATC
             {
                 ButtonControlStartStop.Background = Brushes.Green;
                 ButtonControlStartStop.Content = "START";
+                ATC_Display_Data(true);
                 whazzup_tfl.DeleteClients();
-                worker.CancelAsync();
+                
             }
         }
         private void Close_Click(object sender, RoutedEventArgs e)
         {
-            worker.CancelAsync();
+            ATC_Display_Data(true);
             whazzup_tfl.DeleteClients();
             this.Close();
         }
