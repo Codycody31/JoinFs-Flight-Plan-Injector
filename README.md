@@ -78,7 +78,7 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://fshs.info)
-This project was started by Vahn Gomes for the FSHS Discord group. The site is owned by vahn gomes and has be run on servers such as Firebase but has been transfered to PHP.
+This project was started by Vahn Gomes for the FSHS and TFL Discord groups. The FSHS Whazzup Updater acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -106,11 +106,15 @@ To get a local copy up and running follow these simple steps.
   ```sh
   https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-windows-x64-8.1.6-0-VS16-installer.exe?from_af=true
   ```
+* Visual Studio 2022
+  ```sh
+  
+  ```
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The FSHS Website is meant to allow FSHS members to install products that are hard to find, or just plain no longer available.
-This can include products such as FSX@WAR, CCP, FSCAI, ArrCab, and TMAP which can be hard to find.
+
+FSHS Whazzup Updater acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!
 
 _For more examples, please refer to the [Documentation](https://docs.fshs.info)_
 
@@ -130,7 +134,7 @@ _For more examples, please refer to the [Documentation](https://docs.fshs.info)_
     - [ ] Faster load speed
     - [ ] Use of JQUERY to make usage easier
 
-See the [open issues](https://github.com/Codycody31/FSHS-PHP/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Codycody31/FSHS-Whazzup-Updater/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -157,7 +161,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -168,7 +172,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Vahn Gomes - vahn.gomes@fshs.info
 
-Project Link: [https://github.com/Codycody31/FSHS-PHP](https://github.com/Codycody31/FSHS-PHP)
+Project Link: [https://github.com/Codycody31/FSHS-Whazzup-Updater](https://github.com/Codycody31/FSHS-Whazzup-Updater)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -186,24 +190,24 @@ Project Link: [https://github.com/Codycody31/FSHS-PHP](https://github.com/Codyco
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/Codycody31/FSHS-PHP.svg?style=for-the-badge
-[contributors-url]: https://github.com/Codycody31/FSHS-PHP/graphs/contributors
+[contributors-url]: https://github.com/Codycody31/FSHS-Whazzup-Updater/graphs/contributors
 
 [forks-shield]: https://img.shields.io/github/forks/Codycody31/FSHS-PHP.svg?style=for-the-badge
-[forks-url]: https://github.com/Codycody31/FSHS-PHP/network/members
+[forks-url]: https://github.com/Codycody31/FSHS-Whazzup-Updater/network/members
 
 [stars-shield]: https://img.shields.io/github/stars/Codycody31/FSHS-PHP.svg?style=for-the-badge
-[stars-url]: https://github.com/Codycody31/FSHS-PHP/stargazers
+[stars-url]: https://github.com/Codycody31/FSHS-Whazzup-Updater/stargazers
 
 [issues-shield]: https://img.shields.io/github/issues/Codycody31/FSHS-PHP.svg?style=for-the-badge
-[issues-url]: https://github.com/Codycody31/FSHS-PHP/issues
+[issues-url]: https://github.com/Codycody31/FSHS-Whazzup-Updater/issues
 
 [license-shield]: https://img.shields.io/github/license/Codycody31/FSHS-PHP.svg?style=for-the-badge
-[license-url]: https://github.com/Codycody31/FSHS-PHP/blob/master/LICENSE.txt
+[license-url]: https://github.com/Codycody31/FSHS-Whazzup-Updater/blob/master/LICENSE
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 
-[product-screenshot]: images/logo/Logo2.jpg
+[product-screenshot]: lib/images/Logo2.ico
 
 [CSS-url]: https://www.w3.org/Style/CSS/Overview.en.html
 [CSS.com]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
