@@ -1,0 +1,24 @@
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\FSHS Desktop ATC.exe
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\FSHS Desktop ATC.deps.json
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\FSHS Desktop ATC.runtimeconfig.json
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\FSHS Desktop ATC.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\FSHS Desktop ATC.pdb
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC.csproj.AssemblyReference.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC_MarkupCompile.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC_MarkupCompile.lref
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC.g.resources
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC.AssemblyInfoInputs.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC.AssemblyInfo.cs
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC.csproj.CoreCompileInputs.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\refint\FSHS Desktop ATC.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC.pdb
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC.genruntimeconfig.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\ref\FSHS Desktop ATC.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC_Content.g.cs
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\FSHS Desktop ATC.csproj.Fody.CopyLocal.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\FSHS Desktop ATC.dll.config

@@ -1,0 +1,5 @@
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\publish\FSHS Desktop ATC.exe
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\publish\FSHS Desktop ATC.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\publish\FSHS Desktop ATC.runtimeconfig.json
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\publish\FSHS Desktop ATC.pdb
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\publish\FSHS Desktop ATC.deps.json

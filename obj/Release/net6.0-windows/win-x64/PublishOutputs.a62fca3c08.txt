@@ -1,0 +1,2 @@
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\win-x64\FSHS Desktop ATC.pdb
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\win-x64\FSHS Desktop ATC.exe
