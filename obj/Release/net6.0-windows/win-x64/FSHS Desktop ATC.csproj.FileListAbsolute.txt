@@ -2,7 +2,24 @@ C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\F
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\FSHS Desktop ATC.deps.json
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\FSHS Desktop ATC.runtimeconfig.json
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\FSHS Desktop ATC.dll
-C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\FSHS Desktop ATC.pdb
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.csproj.AssemblyReference.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\MainWindow.g.cs
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\App.g.cs
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC_Content.g.cs
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC_MarkupCompile.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC_MarkupCompile.lref
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\MainWindow.baml
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.g.resources
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.AssemblyInfoInputs.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.AssemblyInfo.cs
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.csproj.CoreCompileInputs.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.csproj.Fody.CopyLocal.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\refint\FSHS Desktop ATC.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.genruntimeconfig.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\ref\FSHS Desktop ATC.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\FSHS Desktop ATC.dll.config
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\Microsoft.CSharp.dll
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\Microsoft.VisualBasic.Core.dll
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\Microsoft.Win32.Primitives.dll
@@ -280,25 +297,7 @@ C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\P
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\PresentationNative_cor3.dll
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\vcruntime140_cor3.dll
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\wpfgfx_cor3.dll
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.csproj.AssemblyReference.cache
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\MainWindow.g.cs
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\App.g.cs
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC_Content.g.cs
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC_MarkupCompile.cache
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC_MarkupCompile.lref
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\MainWindow.baml
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.g.resources
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.AssemblyInfoInputs.cache
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.AssemblyInfo.cs
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.csproj.CoreCompileInputs.cache
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.csproj.Fody.CopyLocal.cache
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.csproj.CopyComplete
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.dll
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\refint\FSHS Desktop ATC.dll
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.pdb
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\FSHS Desktop ATC.genruntimeconfig.cache
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\win-x64\ref\FSHS Desktop ATC.dll
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\Microsoft.VisualBasic.Forms.resources.dll
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\PresentationCore.resources.dll
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\win-x64\PresentationFramework.resources.dll

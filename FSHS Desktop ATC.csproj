@@ -7,10 +7,16 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Logo2.ico</ApplicationIcon>
-    <PublishReadyToRun>true</PublishReadyToRun>
     <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRun>true</PublishReadyToRun>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
+
+	<PropertyGroup>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
 
   <ItemGroup>
     <None Remove="lib\images\Logo2.ico" />

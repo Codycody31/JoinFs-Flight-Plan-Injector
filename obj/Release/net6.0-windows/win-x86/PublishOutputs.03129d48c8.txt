@@ -1,0 +1,8 @@
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\win-x86\FSHS Desktop ATC.pdb
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\win-x86\FSHS Desktop ATC.dll.config
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\win-x86\D3DCompiler_47_cor3.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\win-x86\PenImc_cor3.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\win-x86\PresentationNative_cor3.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\win-x86\vcruntime140_cor3.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\win-x86\wpfgfx_cor3.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\win-x86\FSHS Desktop ATC.exe

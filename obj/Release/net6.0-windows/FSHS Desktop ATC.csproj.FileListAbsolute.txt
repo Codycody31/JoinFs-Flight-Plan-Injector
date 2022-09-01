@@ -21,7 +21,4 @@ C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\refint\FS
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\FSHS Desktop ATC.pdb
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\FSHS Desktop ATC.genruntimeconfig.cache
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\ref\FSHS Desktop ATC.dll
-C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\FSHS Desktop ATC.dll.manifest
-C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\FSHS Desktop ATC.application
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\FSHS Desktop ATC.dll.manifest
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Release\net6.0-windows\FSHS Desktop ATC.application
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\FSHS Desktop ATC.dll.config
