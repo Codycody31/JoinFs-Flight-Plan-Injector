@@ -10,11 +10,10 @@ namespace FSHS_Desktop_ATC
 {
     class logger
     {
-        string path;
+        string path = "log.txt";
         public logger()
         {
-            string path = "log.txt";
-            if (!File.Exists("log.txt"))
+            if (!File.Exists(path))
             {
                 File.CreateText(path);
             }        

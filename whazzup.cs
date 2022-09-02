@@ -23,10 +23,6 @@ namespace FSHS_Desktop_ATC
         string path;
         public whazzup(string whazzupPath = null)
         {
-            if (!File.Exists("log.txt"))
-            {
-                File.CreateText(pathlog);
-            }
             File.Delete(whazzupPath + "whazzup_TFL.txt");
             using (StreamWriter sw = File.CreateText(whazzupPath + "whazzup_TFL.txt"))
             {
