@@ -16,6 +16,8 @@
 
 	<PropertyGroup>
         <DebugType>embedded</DebugType>
+        <AssemblyName>FSHS Whazzup Updater</AssemblyName>
+        <SignAssembly>False</SignAssembly>
     </PropertyGroup>
 
   <ItemGroup>

@@ -1,2 +1,2 @@
-C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\FSHS Desktop ATC.dll.config
-C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\FSHS Desktop ATC.exe
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\FSHS Whazzup Updater.dll.config
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Release\net6.0-windows\publish\FSHS Whazzup Updater.exe
