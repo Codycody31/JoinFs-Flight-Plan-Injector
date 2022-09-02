@@ -1,1 +1,3 @@
 bin/Release/net6.0-windows/publish/*
+bin/Debug/*
+bin/publish/*
