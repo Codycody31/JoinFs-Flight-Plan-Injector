@@ -42,6 +42,22 @@ namespace FSHS_Desktop_ATC
                     logger.info("LICENSE.txt created!", "MainWindow", "Startup");
                 }
             }
+            if (!File.Exists("tfl-flightplan.sql"))
+            {
+                using (StreamWriter sw = File.CreateText("tfl-flightplan.sql"))
+                {
+                    sw.WriteLine("SET SQL_MODE = \"NO_AUTO_VALUE_ON_ZERO\";\r\nSTART TRANSACTION;\r\nSET time_zone = \"+00:00\";\r\nCREATE TABLE `flightplan` (\r\n  `id` int(11) NOT NULL,\r\n  `callsign` varchar(10) NOT NULL,\r\n  `aircraft` varchar(10) NOT NULL,\r\n  `departure` varchar(4) NOT NULL,\r\n  `arrival` varchar(4) NOT NULL,\r\n  `route` varchar(250) NOT NULL,\r\n  `remarks` varchar(250) NOT NULL,\r\n  `cruisingaltitude` varchar(10) NOT NULL,\r\n  `flightrule` varchar(10) NOT NULL\r\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;\r\nALTER TABLE `flightplan`\r\n  ADD PRIMARY KEY (`id`);\r\n\r\nALTER TABLE `flightplan`\r\n  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;\r\nCOMMIT;");
+                    logger.info("tfl-flightplan.sql created!", "MainWindow", "Startup");
+                }
+            }
+            if (!File.Exists("ReadMe.txt"))
+            {
+                using (StreamWriter sw = File.CreateText("Readme.txt"))
+                {
+                    sw.WriteLine("Use the attached tfl-flightplan.sql file to create the MySQL Database;\r\nthen just add the information of the flight and start the Updater!\r\nIf something isn't showing always check the log file;\r\nOne more thing, the application must run twice for the first time! One to add files and two to for the GUI.\r\nAfter this if you don't remove any files it will work fine!\r\n\r\nCreated by: Vahn Gomes, copyright 2022.\r\n");
+                    logger.info("ReadMe.txt created!", "MainWindow", "Startup");
+                }
+            }
             if (!MyIni.KeyExists("DefaultVolume", "Audio"))
             {
                 MyIni.Write("DefaultVolume", "100", "Audio");
@@ -121,11 +137,11 @@ namespace FSHS_Desktop_ATC
         void worker_DoWork(object sender, DoWorkEventArgs e)
         {
             logger.info("Started whazzup_tfl background worker", "MainWindow", "worker_DoWork");
-            for (int i = 0; i < 600; i++)
+            for (int i = 0; i < 6000; i++)
             {
                 try { whazzup_tfl.UpdateWithFlightPlans(); }
                 catch { logger.error("Failed to confirm that whazzup_tfl updated", "MainWindow", "worker_DoWork"); }
-                finally { Thread.Sleep(1000); }
+                finally { Thread.Sleep(750); }
             }
             logger.info("Stopped whazzup_tfl background worker", "MainWindow", "worker_DoWork");
             CheckATC();  

@@ -1,0 +1,20 @@
+01223202 STATUS : whazzup : Startup : Startup completed!
+01223202 INFO : MainWindow : Startup : log.txt created!
+01223202 INFO : MainWindow : Startup : LICENSE.txt created!
+01223202 STATUS : MainWindow : Startup : Startup completed!
+01223211 INFO : MainWindow : Start-Stop : Updater Started
+01223211 ERROR : MainWindow : Start-Stop : Failed to Setup whazzup File
+01223211 INFO : MainWindow : ATC_Display_Data() : Started worker_DoWork
+01223211 INFO : MainWindow : worker_DoWork : Started whazzup_tfl background worker
+01223326 ERROR : whazzup : UpdateWithFlightPlans : Failed to update variable UpdatedCLIENTAircraft
+01223712 ERROR : whazzup : UpdateWithFlightPlans : Failed to Open and Read C:\Users\cody\Documents\JoinFS-FSX\whazzup.txt
+01224111 INFO : MainWindow : Start-Stop : Updater Stopped
+
+01224111 INFO : MainWindow : ATC_Display_Data() : Stopped Background Worker
+01224111 INFO : whazzup : DeleteClients : whazzup_tfl.txt deleted
+01224111 ERROR : MainWindow : worker_DoWork : Failed to confirm that whazzup_tfl updated
+01224112 ERROR : MainWindow : worker_DoWork : Failed to confirm that whazzup_tfl updated
+01224113 INFO : MainWindow : Close : Updater Closed
+
+01224113 INFO : MainWindow : ATC_Display_Data() : Stopped Background Worker
+01224113 INFO : whazzup : DeleteClients : whazzup_tfl.txt deleted

@@ -53,7 +53,7 @@ namespace FSHS_Desktop_ATC
             {
                 return m.Groups[0].Value;
             }
-            else { return "Whazzup Read failed"; }
+            else { return ""; logger.error("Failed to read " + callsign + ":"+VID+" info from whazzup", "whazzup", "WhazzupRead"); }
             
         }
         public bool ReadCallsignExists(string callsign)
@@ -138,7 +138,7 @@ namespace FSHS_Desktop_ATC
                     }
                     catch
                     {
-                        logger.error("Failed to update variable UpdatedCLIENTAircraft", "whazzup", "UpdateWithFlightPlans");
+                        logger.error("Failed to update variable UpdatedCLIENTAircraft with aircraft + flight plan", "whazzup", "UpdateWithFlightPlans");
                     }
                 }
                 else
