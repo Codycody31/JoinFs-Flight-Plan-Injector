@@ -54,7 +54,7 @@ namespace FSHS_Desktop_ATC
             {
                 using (StreamWriter sw = File.CreateText("Readme.txt"))
                 {
-                    sw.WriteLine("Use the attached tfl-flightplan.sql file to create the MySQL Database;\r\nthen just add the information of the flight and start the Updater!\r\nIf something isn't showing always check the log file;\r\nOne more thing, the application must run twice for the first time! One to add files and two to for the GUI.\r\nAfter this if you don't remove any files it will work fine!\r\n\r\nCreated by: Vahn Gomes, copyright 2022.\r\n");
+                    sw.WriteLine("Use the attached tfl-flightplan.sql file to create the MySQL Database;\r\nthen just add the information of the flight and start the Updater!\r\nIf something isn't showing always check the log file;\r\nOne more thing, the application must run twice for the first time! One to add files and two to for the GUI.\r\nAfter this if you don't remove any files it will work fine!\r\n\r\nCreated by: Vahn Gomes, copyright 2022.");
                     logger.info("ReadMe.txt created!", "MainWindow", "Startup");
                 }
             }
@@ -126,11 +126,11 @@ namespace FSHS_Desktop_ATC
                 try
                 {
                     worker.RunWorkerAsync();
-                    logger.info("Started worker_DoWork", "MainWindow", "ATC_Display_Data()");
+                    logger.info("Started worker_DoWork", "MainWindow", "ATC_Display_Data");
                 }
                 catch
                 {
-                    logger.error("Failed to Start Background Worker", "MainWindow", "ATC_Display_Data()");
+                    logger.error("Failed to Start Background Worker", "MainWindow", "ATC_Display_Data");
                 }
             }
         }
@@ -139,8 +139,9 @@ namespace FSHS_Desktop_ATC
             logger.info("Started whazzup_tfl background worker", "MainWindow", "worker_DoWork");
             for (int i = 0; i < 6000; i++)
             {
+                whazzup_tfl.UpdateWithFlightPlans();
                 try { whazzup_tfl.UpdateWithFlightPlans(); }
-                catch { logger.error("Failed to confirm that whazzup_tfl updated", "MainWindow", "worker_DoWork"); }
+                catch { logger.error("Failed to confirm that whazzup_tfl updated successfully", "MainWindow", "worker_DoWork"); ATC_Display_Data(true); }
                 finally { Thread.Sleep(750); }
             }
             logger.info("Stopped whazzup_tfl background worker", "MainWindow", "worker_DoWork");
@@ -195,8 +196,7 @@ namespace FSHS_Desktop_ATC
                     logger.info("Updater Started", "MainWindow", "Start-Stop");
                     ButtonControlStartStop.Background = Brushes.Red;
                     ButtonControlStartStop.Content = "STOP";
-                    try { whazzup_tfl.WriteClients(); }
-                    catch { logger.error("Failed to Setup whazzup File", "MainWindow", "Start-Stop"); IniFile MyIni = new IniFile(); }
+                    whazzup_tfl.WriteClients(); 
                     try { ATC_Display_Data(); }
                     catch {     error("Failed to start worker", "MainWindow", "Start-Stop"); }
                     

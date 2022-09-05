@@ -9,14 +9,14 @@
         WindowState="Normal"
         WindowStyle="SingleBorderWindow"
         Icon="lib/images/Logo2.ico"
-        Title="Whazzup Updater" Height="300" Width="250" Background="Black">
+        Title="JoinFs Flight Plan Injector" Height="300" Width="250" Background="Black">
     <Grid Margin="0,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="17*"/>
             <RowDefinition Height="90*"/>
             <RowDefinition Height="35*"/>
         </Grid.RowDefinitions>
-        <Label x:Name="version" Content="V 0.3.6.5-x64" HorizontalAlignment="Left" Margin="160,0,0,0" VerticalAlignment="Center" Foreground="Wheat" FontSize="10" Height="23" Width="80"/>
+        <Label x:Name="version" Content="V 0.7.1.1-x64" HorizontalAlignment="Left" Margin="167,0,0,0" VerticalAlignment="Center" Foreground="Wheat" FontSize="10" Height="23" Width="80"/>
         <TextBox FontSize="9" x:Name="WhazzupLocation" IsEnabled="False" HorizontalAlignment="Left" Margin="10,31,0,0" Grid.Row="2" TextWrapping="NoWrap" VerticalAlignment="Top" Width="200" Height="18" TextChanged="WhazzupLocation_TextChanged"/>
         <CheckBox Checked="SpecifyWhazzupLocation_Checked" Unchecked="SpecifyWhazzupLocation_UnChecked" x:Name="SpecifyWhazzupLocation" Content="Specify Whazzup Location" Foreground="Wheat" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Height="15" Width="158"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="dev.fshs.info" VerticalAlignment="Top" FontSize="10" Foreground="Wheat" Width="64" Height="13"/>
@@ -25,7 +25,7 @@
         <Button x:Name="ButtonControlStartStop" Click="StartStop_Clicked" Content="START" Background="Green" HorizontalAlignment="Left" Margin="10,23,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="48"/>
         <Button Content="CLOSE" Click="Close_Click" HorizontalAlignment="Left" Margin="63,23,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="48"/>
         <TextBlock HorizontalAlignment="Left" Margin="145,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="By Vahn Gomes" VerticalAlignment="Top" FontSize="10" Foreground="Wheat" Width="78" Height="13"/>
-        <Label Content="FSHS Whazzup Updater" HorizontalAlignment="Left" Margin="5,3,0,0" VerticalAlignment="Top" Foreground="Wheat" Height="34" Width="135" Grid.RowSpan="2"/>
+        <Label Content="JoinFs Flight Plan Injector" HorizontalAlignment="Left" Margin="5,3,0,0" VerticalAlignment="Top" Foreground="Wheat" Height="34" Width="155" Grid.RowSpan="2"/>
         <Separator Margin="0,17,0,167" Foreground="Wheat" Grid.RowSpan="2"/>
         <CheckBox IsChecked="True" x:Name="TFL" Content="TFL" HorizontalAlignment="Left" Margin="160,57,0,0" Foreground="Wheat" Grid.Row="1" VerticalAlignment="Top"/>
         <Button Content="Update" Click="Update_Click" Height="28" Width="48" HorizontalAlignment="Left" Margin="167,142,0,0" Grid.Row="1" VerticalAlignment="Top"/>

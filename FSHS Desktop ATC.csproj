@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Logo2.ico</ApplicationIcon>
-    <PublishSingleFile>true</PublishSingleFile>
+    <PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
     <SelfContained>true</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PublishReadyToRun>true</PublishReadyToRun>
@@ -16,7 +16,7 @@
 
 	<PropertyGroup>
         <DebugType>embedded</DebugType>
-        <AssemblyName>FSHS Whazzup Updater</AssemblyName>
+        <AssemblyName>JoinFs Flight Plan Injector</AssemblyName>
         <SignAssembly>False</SignAssembly>
     </PropertyGroup>
 

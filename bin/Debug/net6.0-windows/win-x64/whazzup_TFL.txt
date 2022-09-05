@@ -2,9 +2,10 @@
 VERSION = 1
 RELOAD = 1
 UPDATE = 20220830184832
-CONNECTED CLIENTS = 0
+CONNECTED CLIENTS = 7
 CONNECTED SERVERS = 41
 !CLIENTS
+KZJX_CTR:Insidious Fiddler:Insidious Fiddler:ATC:135.92:0:0:0:0::::::::::6:600:::::::::::::::::::::::::::LFTW_TWR:LFCH:LFCH:ATC:122.80:43.7574424743652:4.41634702682495:0:0::::::::::4:84:::::::::::::::::::::::::::LHKE_GND:Blue Sky VA:Blue Sky VA:ATC:121.75:46.9174995422363:19.7492218017578:0:0::::::::::3:201:::::::::::::::::::::::::::EGLL_TWR:Server:Server:ATC:122.80:51.4775009155273:-0.461389005184174:0:0::::::::::4:40:::::::::::::::::::::::::::LIRA_GND:Ground LIRA:Ground LIRA:ATC:129.70:41.7993621826172:12.5949363708496:0:0::::::::::3:88:::::::::::::::::::::::::::SBRJ_TWR:Brasilamigos:Brasilamigos:ATC:122.80:-22.9104614257813:-43.1631317138672:0:0::::::::::4:88:::::::::::::::::::::::::::N001:MASFSXSERVER:MASFSXSERVER:PILOT::45.335521697998:-75.6851272583008:380:0:/F18::KJAX:110:KNIP:JoinFS:::1200::::VFR::::::::remarks:DCT::::::::018:::
 !SERVERS
 162.248.88.180:162.248.88.180:Internet:DigitalThemePark:true:999
 82.72.118.42:sundowners.fsgg.nl:Internet:FSGG The Netherlands:true:999
