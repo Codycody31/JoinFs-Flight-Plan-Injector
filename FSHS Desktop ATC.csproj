@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
+	<TargetPlatformVersion>8.0</TargetPlatformVersion>
     <RootNamespace>FSHS_Desktop_ATC</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
@@ -13,11 +14,15 @@
     <PublishReadyToRun>true</PublishReadyToRun>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
-
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="Windows" />
+	</ItemGroup>
 	<PropertyGroup>
         <DebugType>embedded</DebugType>
         <AssemblyName>JoinFs Flight Plan Injector</AssemblyName>
         <SignAssembly>False</SignAssembly>
+        <UseWindowsForms>True</UseWindowsForms>
     </PropertyGroup>
 
   <ItemGroup>
@@ -34,6 +39,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="MySql.Data" Version="8.0.30" />
+    <PackageReference Include="Uno.UI" Version="4.4.20" />
   </ItemGroup>
 
   <ItemGroup>

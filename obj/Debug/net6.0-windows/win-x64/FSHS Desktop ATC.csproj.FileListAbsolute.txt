@@ -1,8 +1,3 @@
-C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\FSHS Whazzup Updater.exe
-C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\FSHS Whazzup Updater.dll.config
-C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\FSHS Whazzup Updater.deps.json
-C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\FSHS Whazzup Updater.runtimeconfig.json
-C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\FSHS Whazzup Updater.dll
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\Microsoft.CSharp.dll
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\Microsoft.VisualBasic.Core.dll
 C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\Microsoft.Win32.Primitives.dll
@@ -504,18 +499,23 @@ C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\zh-
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Desktop ATC.csproj.AssemblyReference.cache
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\MainWindow.g.cs
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\App.g.cs
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Whazzup Updater_Content.g.cs
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Whazzup Updater_MarkupCompile.cache
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Whazzup Updater_MarkupCompile.lref
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\MainWindow.baml
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Whazzup Updater.g.resources
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Desktop ATC.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Desktop ATC.AssemblyInfoInputs.cache
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Desktop ATC.AssemblyInfo.cs
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Desktop ATC.csproj.CoreCompileInputs.cache
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Desktop ATC.csproj.Fody.CopyLocal.cache
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Desktop ATC.csproj.CopyComplete
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Whazzup Updater.dll
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\refint\FSHS Whazzup Updater.dll
 C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\FSHS Desktop ATC.genruntimeconfig.cache
-C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\ref\FSHS Whazzup Updater.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\JoinFs Flight Plan Injector.exe
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\JoinFs Flight Plan Injector.dll.config
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\JoinFs Flight Plan Injector.deps.json
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\JoinFs Flight Plan Injector.runtimeconfig.json
+C:\Users\cody\source\repos\FSHS Desktop ATC\bin\Debug\net6.0-windows\win-x64\JoinFs Flight Plan Injector.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\JoinFs Flight Plan Injector_Content.g.cs
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\JoinFs Flight Plan Injector_MarkupCompile.cache
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\JoinFs Flight Plan Injector_MarkupCompile.lref
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\JoinFs Flight Plan Injector.g.resources
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\JoinFs Flight Plan Injector.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\refint\JoinFs Flight Plan Injector.dll
+C:\Users\cody\source\repos\FSHS Desktop ATC\obj\Debug\net6.0-windows\win-x64\ref\JoinFs Flight Plan Injector.dll

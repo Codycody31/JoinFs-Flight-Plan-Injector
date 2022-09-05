@@ -53,6 +53,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.30, )"
+            },
+            "Uno.UI": {
+              "target": "Package",
+              "version": "[4.4.20, )"
             }
           },
           "imports": [
@@ -88,7 +92,7 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
-            "Microsoft.WindowsDesktop.App.WPF": {
+            "Microsoft.WindowsDesktop.App": {
               "privateAssets": "none"
             }
           },

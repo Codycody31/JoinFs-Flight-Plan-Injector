@@ -17,7 +17,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 using MySql.Data.MySqlClient;
+using Windows.UI.Notifications;
+
 namespace FSHS_Desktop_ATC
 {
     public partial class MainWindow : Window
@@ -191,11 +194,17 @@ namespace FSHS_Desktop_ATC
             executeMethod = !executeMethod;
             if (executeMethod == true)
             {
-                if (JoinFs.IsChecked == true && TFL.IsChecked == true)
+                if (JoinFs.IsChecked == true && TFL.IsChecked == true || Other.IsChecked == true)
                 {
                     logger.info("Updater Started", "MainWindow", "Start-Stop");
                     ButtonControlStartStop.Background = Brushes.Red;
                     ButtonControlStartStop.Content = "STOP";
+                    var message = "Sample message";
+                    var xml = $"<?xml version=\"1.0\"?><toast><visual><binding template=\"ToastText01\"><text id=\"1\">{message}</text></binding></visual></toast>";
+                    var toastXml = new XmlDocument();
+                    toastXml.LoadXml(xml);
+                    var toast = new ToastNotification(toastXml);
+                    ToastNotificationManager.CreateToastNotifier("Sample toast").Show(toast);
                     whazzup_tfl.WriteClients(); 
                     try { ATC_Display_Data(); }
                     catch {     error("Failed to start worker", "MainWindow", "Start-Stop"); }
@@ -203,9 +212,9 @@ namespace FSHS_Desktop_ATC
                 }
                 else
                 {
-                    logger.error("Failed Data sources JoinFs and TFL need to be selected", "MainWindow", "Start-Stop");
+                    logger.error("Failed Data sources need to be selected", "MainWindow", "Start-Stop");
                     new IniFile();
-                    MessageBox.Show("Data sources JoinFs and TFL need to be selected");
+                    MessageBox.Show("Data sources need to be selected");
                     executeMethod = false;
                 }
             }
@@ -241,6 +250,16 @@ namespace FSHS_Desktop_ATC
             {
                 logger.error("Failed to manually call whazzup_tfl.UpdateWithFlightPlans()", "MainWindow", "Update");
             }
+        }
+        private void Other_UnChecked(object sender, RoutedEventArgs e)
+        {
+            JoinFs.IsChecked = true;
+            TFL.IsChecked = true;
+        }
+        private void Other_Checked(object sender, RoutedEventArgs e)
+        {
+            JoinFs.IsChecked = false;
+            TFL.IsChecked = false;
         }
     }
 }

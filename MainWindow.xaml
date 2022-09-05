@@ -16,12 +16,13 @@
             <RowDefinition Height="90*"/>
             <RowDefinition Height="35*"/>
         </Grid.RowDefinitions>
-        <Label x:Name="version" Content="V 0.7.1.1-x64" HorizontalAlignment="Left" Margin="167,0,0,0" VerticalAlignment="Center" Foreground="Wheat" FontSize="10" Height="23" Width="80"/>
+        <Label x:Name="version" Content="V 0.7.1.2-x64" HorizontalAlignment="Left" Margin="167,0,0,0" VerticalAlignment="Center" Foreground="Wheat" FontSize="10" Height="23" Width="80"/>
         <TextBox FontSize="9" x:Name="WhazzupLocation" IsEnabled="False" HorizontalAlignment="Left" Margin="10,31,0,0" Grid.Row="2" TextWrapping="NoWrap" VerticalAlignment="Top" Width="200" Height="18" TextChanged="WhazzupLocation_TextChanged"/>
         <CheckBox Checked="SpecifyWhazzupLocation_Checked" Unchecked="SpecifyWhazzupLocation_UnChecked" x:Name="SpecifyWhazzupLocation" Content="Specify Whazzup Location" Foreground="Wheat" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Height="15" Width="158"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="dev.fshs.info" VerticalAlignment="Top" FontSize="10" Foreground="Wheat" Width="64" Height="13"/>
         <Label Content="Data Source" HorizontalAlignment="Left" Margin="148,10,0,0" Foreground="Wheat" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="26"/>
         <CheckBox IsChecked="True" x:Name="JoinFs" Content="JoinFs" Foreground="Wheat" HorizontalAlignment="Left" Margin="160,37,0,0" Grid.Row="1" VerticalAlignment="Top" Height="15" Width="52"/>
+        <CheckBox x:Name="Other" Content="Other" Foreground="Wheat" HorizontalAlignment="Left" Margin="160,75,0,0" Grid.Row="1" VerticalAlignment="Top" Height="15" Width="52" Checked="Other_Checked" Unchecked="Other_UnChecked"/>
         <Button x:Name="ButtonControlStartStop" Click="StartStop_Clicked" Content="START" Background="Green" HorizontalAlignment="Left" Margin="10,23,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="48"/>
         <Button Content="CLOSE" Click="Close_Click" HorizontalAlignment="Left" Margin="63,23,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="48"/>
         <TextBlock HorizontalAlignment="Left" Margin="145,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="By Vahn Gomes" VerticalAlignment="Top" FontSize="10" Foreground="Wheat" Width="78" Height="13"/>
