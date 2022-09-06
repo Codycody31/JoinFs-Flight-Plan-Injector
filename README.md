@@ -26,23 +26,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Codycody31/FSHS-Whazzup-Updater">
+  <a href="https://github.com/Codycody31/JoinFs-Flight-Plan-Injector">
     <img src="lib/images/Logo2.ico" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">FSHS PHP Website</h3>
+<h3 align="center">JoinFs Flight Plan Injector</h3>
 
   <p align="center">
-    The FSHS Website offical setup, only to be used by FSHS Board members
+    The FSHS JoinFs Flight Plan Injector
     <br />
-    <a href="https://github.com/Codycody31/FSHS-Whazzup-Updater"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Codycody31/JoinFs-Flight-Plan-Injector"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://dev.fshs.info/products/whazzup-updater">View Demo</a>
+    <a href="https://dev.fshs.info/products/JoinFs-Flight-Plan-Injector">View Demo</a>
     ·
-    <a href="https://github.com/Codycody31/FSHS-Whazzup-Updater/issues">Report Bug</a>
+    <a href="https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Codycody31/FSHS-Whazzup-Updater/issues">Request Feature</a>
+    <a href="https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/issues">Request Feature</a>
   </p>
 </div>
 
@@ -77,7 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project was started by Vahn Gomes for the FSHS and TFL Discord groups. The FSHS Whazzup Updater acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!
+This project was started by Vahn Gomes for the FSHS and TFL Discord groups. The JoinFs Flight Plan Injector acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -113,9 +113,9 @@ To get a local copy up and running follow these simple steps.
 ## Usage
 
 
-FSHS Whazzup Updater acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!
+JoinFs Flight Plan Injector acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!
 
-_For more examples, please refer to the [Documentation](https://dev.fshs.info/products/whazzup-updater/documentation)_
+_For more examples, please refer to the [Documentation](https://dev.fshs.info/products/JoinFs-Flight-Plan-Injector/documentation)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -133,7 +133,7 @@ _For more examples, please refer to the [Documentation](https://dev.fshs.info/pr
     - [ ] Update Aircraft with Flightplans using FSUIPC| Local
     - [ ] Convert aircraft info to whazzup File
 
-See the [open issues](https://github.com/Codycody31/FSHS-Whazzup-Updater/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -171,7 +171,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Vahn Gomes - vahn.gomes@fshs.info
 
-Project Link: [https://github.com/Codycody31/FSHS-Whazzup-Updater](https://github.com/Codycody31/FSHS-Whazzup-Updater)
+Project Link: [https://github.com/Codycody31/JoinFs-Flight-Plan-Injector](https://github.com/Codycody31/JoinFs-Flight-Plan-Injector)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -189,19 +189,19 @@ Project Link: [https://github.com/Codycody31/FSHS-Whazzup-Updater](https://githu
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/Codycody31/FSHS-PHP.svg?style=for-the-badge
-[contributors-url]: https://github.com/Codycody31/FSHS-Whazzup-Updater/graphs/contributors
+[contributors-url]: https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/graphs/contributors
 
 [forks-shield]: https://img.shields.io/github/forks/Codycody31/FSHS-PHP.svg?style=for-the-badge
-[forks-url]: https://github.com/Codycody31/FSHS-Whazzup-Updater/network/members
+[forks-url]: https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/network/members
 
 [stars-shield]: https://img.shields.io/github/stars/Codycody31/FSHS-PHP.svg?style=for-the-badge
-[stars-url]: https://github.com/Codycody31/FSHS-Whazzup-Updater/stargazers
+[stars-url]: https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/stargazers
 
 [issues-shield]: https://img.shields.io/github/issues/Codycody31/FSHS-PHP.svg?style=for-the-badge
-[issues-url]: https://github.com/Codycody31/FSHS-Whazzup-Updater/issues
+[issues-url]: https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/issues
 
 [license-shield]: https://img.shields.io/github/license/Codycody31/FSHS-PHP.svg?style=for-the-badge
-[license-url]: https://github.com/Codycody31/FSHS-Whazzup-Updater/blob/master/LICENSE
+[license-url]: https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/blob/master/LICENSE
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
