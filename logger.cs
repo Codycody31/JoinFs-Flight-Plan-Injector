@@ -4,9 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Shapes;
 
-namespace FSHS_Desktop_ATC
+namespace JoinFs_Flight_Plan_Injector
 {
     class logger
     {
@@ -16,7 +15,7 @@ namespace FSHS_Desktop_ATC
             if (!File.Exists(path))
             {
                 File.CreateText(path);
-            }        
+            }
         }
         public void info(string log, string source, string sourcefunction)
         {

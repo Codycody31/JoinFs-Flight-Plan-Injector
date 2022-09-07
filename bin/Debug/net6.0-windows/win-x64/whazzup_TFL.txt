@@ -1,50 +1,0 @@
-!GENERAL
-VERSION = 1
-RELOAD = 1
-UPDATE = 20220830184832
-CONNECTED CLIENTS = 7
-CONNECTED SERVERS = 41
-!CLIENTS
-KZJX_CTR:Insidious Fiddler:Insidious Fiddler:ATC:135.92:0:0:0:0::::::::::6:600:::::::::::::::::::::::::::LFTW_TWR:LFCH:LFCH:ATC:122.80:43.7574424743652:4.41634702682495:0:0::::::::::4:84:::::::::::::::::::::::::::LHKE_GND:Blue Sky VA:Blue Sky VA:ATC:121.75:46.9174995422363:19.7492218017578:0:0::::::::::3:201:::::::::::::::::::::::::::EGLL_TWR:Server:Server:ATC:122.80:51.4775009155273:-0.461389005184174:0:0::::::::::4:40:::::::::::::::::::::::::::LIRA_GND:Ground LIRA:Ground LIRA:ATC:129.70:41.7993621826172:12.5949363708496:0:0::::::::::3:88:::::::::::::::::::::::::::SBRJ_TWR:Brasilamigos:Brasilamigos:ATC:122.80:-22.9104614257813:-43.1631317138672:0:0::::::::::4:88:::::::::::::::::::::::::::N001:MASFSXSERVER:MASFSXSERVER:PILOT::45.335521697998:-75.6851272583008:380:0:/F18::KJAX:110:KNIP:JoinFS:::1200::::VFR::::::::remarks:DCT::::::::018:::
-!SERVERS
-162.248.88.180:162.248.88.180:Internet:DigitalThemePark:true:999
-82.72.118.42:sundowners.fsgg.nl:Internet:FSGG The Netherlands:true:999
-24.141.215.250:joinfs.dvfchh.site:Internet:Deer Valley Flying Club:true:999
-217.112.83.78:joinfs.helisimmer.com:Internet:HeliSimmer.com:true:999
-198.27.64.165:198.27.64.165:Internet:CyberAvia:true:999
-74.208.118.105:74.208.118.105:Internet:USAFv Tactical Datalink:true:999
-54.86.182.46:joinfs.yoyodyne.cf:Internet:Yoyodyne Hub:true:999
-108.45.136.100:100.15.253.55:Internet:EasternHops Community:true:999
-65.255.140.205:65.255.140.205:Internet: Flight Unlimited Network:true:999
-98.224.91.212:http://www.fsvintageair.com:Internet:FSVintageAIR.com:true:999
-91.186.9.180:91.186.9.180:Internet:TTM Flying Circus:true:999
-51.75.163.105:www.virtualnato.org:Internet:* Virtual NATO *:true:999
-35.199.191.28:35.199.191.28:Internet:Noobs Transport:true:999
-76.202.64.190:flightadventures.com:Internet:FlightAdventures VPC:true:999
-85.215.204.240:www.ala23virtual.com:Internet:Ala 23 Virtual:true:999
-90.70.22.202:90.70.22.202:Internet:NSBSI:true:999
-85.214.224.236:85.214.224.236:Internet:Aviatorseindhoven:true:999
-51.254.121.191:51.254.121.191:Internet:HAIDF 2.1.5:true:999
-148.251.40.117:148.251.40.126:6000:Internet:LCA  Les Copains d'Abord:true:999
-82.176.177.179:openairvirtual.eu:Internet:Open:true:999
-85.25.248.77:85.25.248.77:Internet:PNW Backcountry Pilots:true:999
-212.237.2.68:212.237.2.68:Internet:OVT:true:999
-81.159.52.244:81.159.52.244:Internet:UK317 Flight Sim Hub:true:999
-109.61.75.220:10.8.0.1:Internet:Blue Sky:true:999
-85.214.112.47:85.214.112.47:Internet:FeelFreeAirline:true:999
-162.55.223.247:planet.fshub.io:Internet:Planet FsHub:true:999
-85.214.63.20:app-derektar.de:Internet:!vGAF01:true:999
-94.213.123.56:DutchFlightCrew:Internet:DutchFlightCrew:true:999
-217.120.81.9:www.fsclub-friesland.nl:Internet:FSClub Friesland:true:999
-82.7.30.151:82.7.30.151:Internet:GFSG:true:999
-79.18.227.226:79.18.227.226:Internet:Virtual Over Italy:true:999
-49.212.165.206:49.212.165.206:Internet:"2022" SHA:true:999
-217.120.81.9:www.vliegenmetplezier.com:Internet:VMP:true:999
-120.138.19.171:milsim.nz:Internet:vRNZAF:true:999
-101.174.47.184:RAAFv:Internet:RAAFv:true:999
-81.44.158.247:vuelovirtual.no-ip.org:Internet:VueloVirtual:true:999
-73.164.89.159:Saint Paul Airlines:Internet:SPA:true:999
-46.182.6.10:46.182.6.10:Internet:Virtual Team Apache MSFS:true:999
-201.47.210.96:201.47.210.96:Internet:Servidor Brasil Amigos:true:999
-159.180.27.133:192.168.1.158:Internet:Yukon Do It:true:999
-77.44.49.59:joinfs.virginxl.uk:Internet:!TFL & Virgin XL!:true:999

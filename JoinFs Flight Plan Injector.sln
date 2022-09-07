@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoinFs Flight Plan Injector", "JoinFs Flight Plan Injector.csproj", "{8F672CDD-FFE0-4631-B3BB-306B669B8FE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F672CDD-FFE0-4631-B3BB-306B669B8FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F672CDD-FFE0-4631-B3BB-306B669B8FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F672CDD-FFE0-4631-B3BB-306B669B8FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F672CDD-FFE0-4631-B3BB-306B669B8FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27BC81A6-5E23-46BD-9949-9420E4F33146}
+	EndGlobalSection
+EndGlobal

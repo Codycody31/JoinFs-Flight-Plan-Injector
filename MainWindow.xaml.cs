@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Configuration;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -17,14 +16,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Xml;
-using MySql.Data.MySqlClient;
-using Windows.UI.Notifications;
 
-namespace FSHS_Desktop_ATC
+namespace JoinFs_Flight_Plan_Injector
 {
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
     public partial class MainWindow : Window
     {
+        // Add built in .net 6, and ESJFS 3.0.0.6
+        // 
         bool executeMethod;
         whazzup whazzup_tfl = new whazzup();
         IniFile MyIni = new IniFile();
@@ -37,8 +38,9 @@ namespace FSHS_Desktop_ATC
             {
                 File.CreateText("log.txt");
             }
-            if (!File.Exists("LICENSE.txt")) { 
-                using(StreamWriter sw = File.CreateText("LICENSE.txt"))
+            if (!File.Exists("LICENSE.txt"))
+            {
+                using (StreamWriter sw = File.CreateText("LICENSE.txt"))
                 {
                     sw.WriteLine("MIT License\r\n\r\nCopyright (c) 2022 Vahn Melendez Gomes\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the \"Software\"), to deal\r\nin the Software without restriction, including without limitation the rights\r\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r\ncopies of the Software, and to permit persons to whom the Software is\r\nfurnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all\r\ncopies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\r\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\r\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\r\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\r\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\r\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\r\nSOFTWARE.");
                     logger.info("log.txt created!", "MainWindow", "Startup");
@@ -81,27 +83,6 @@ namespace FSHS_Desktop_ATC
             }
             logger.status("Startup completed!", "MainWindow", "Startup");
         }
-        public void info(string log, string source, string sourcefunction)
-        {
-            using (StreamWriter stream = new FileInfo(path).AppendText())
-            {
-                stream.WriteLine(DateTime.Now.ToString("ddHHmmss") + " INFO : " + source + " : " + sourcefunction + " : " + log);
-            }
-        }
-        public void error(string log, string source, string sourcefunction)
-        {
-            using (StreamWriter stream = new FileInfo(path).AppendText())
-            {
-                stream.WriteLine(DateTime.Now.ToString("ddHHmmss") + " ERROR : " + source + " : " + sourcefunction + " : " + log);
-            }
-        }
-        public void status(string log, string source, string sourcefunction)
-        {
-            using (StreamWriter stream = new FileInfo(path).AppendText())
-            {
-                stream.WriteLine(DateTime.Now.ToString("ddHHmmss") + " STATUS : " + source + " : " + sourcefunction + " : " + log);
-            }
-        }
         public void ATC_Display_Data(bool cancel = false)
         {
             BackgroundWorker worker = new BackgroundWorker();
@@ -112,7 +93,7 @@ namespace FSHS_Desktop_ATC
                 worker.DoWork += worker_DoWork;
                 try
                 {
-                    
+
                     worker.CancelAsync();
                     logger.info("Stopped Background Worker", "MainWindow", "ATC_Display_Data()");
                 }
@@ -145,10 +126,10 @@ namespace FSHS_Desktop_ATC
                 whazzup_tfl.UpdateWithFlightPlans();
                 try { whazzup_tfl.UpdateWithFlightPlans(); }
                 catch { logger.error("Failed to confirm that whazzup_tfl updated successfully", "MainWindow", "worker_DoWork"); ATC_Display_Data(true); }
-                finally { Thread.Sleep(750); }
+                finally { Thread.Sleep(500); }
             }
             logger.info("Stopped whazzup_tfl background worker", "MainWindow", "worker_DoWork");
-            CheckATC();  
+            CheckATC();
         }
         void CheckATC()
         {
@@ -167,6 +148,7 @@ namespace FSHS_Desktop_ATC
             try
             {
                 SpecifyWhazzupLocation.IsChecked = true;
+                WhazzupLocation.IsEnabled = true;
             }
             catch
             {
@@ -178,6 +160,7 @@ namespace FSHS_Desktop_ATC
             try
             {
                 SpecifyWhazzupLocation.IsChecked = false;
+                WhazzupLocation.IsEnabled = false;
             }
             catch
             {
@@ -187,9 +170,9 @@ namespace FSHS_Desktop_ATC
         private void WhazzupLocation_TextChanged(object sender, TextChangedEventArgs e)
         {
             try { MyIni.Write("whazzup", WhazzupLocation.Text, "Data"); }
-            catch {logger.error("Failed to update WhazzupLocation in ini file", "MainWindow", "WhazzupLocation"); }
+            catch { logger.error("Failed to update WhazzupLocation in ini file", "MainWindow", "WhazzupLocation"); }
         }
-        private async void StartStop_Clicked(object sender, RoutedEventArgs e)
+        private void StartStop_Clicked(object sender, RoutedEventArgs e)
         {
             executeMethod = !executeMethod;
             if (executeMethod == true)
@@ -199,16 +182,10 @@ namespace FSHS_Desktop_ATC
                     logger.info("Updater Started", "MainWindow", "Start-Stop");
                     ButtonControlStartStop.Background = Brushes.Red;
                     ButtonControlStartStop.Content = "STOP";
-                    var message = "Sample message";
-                    var xml = $"<?xml version=\"1.0\"?><toast><visual><binding template=\"ToastText01\"><text id=\"1\">{message}</text></binding></visual></toast>";
-                    var toastXml = new XmlDocument();
-                    toastXml.LoadXml(xml);
-                    var toast = new ToastNotification(toastXml);
-                    ToastNotificationManager.CreateToastNotifier("Sample toast").Show(toast);
-                    whazzup_tfl.WriteClients(); 
+                    whazzup_tfl.WriteClients();
                     try { ATC_Display_Data(); }
-                    catch {     error("Failed to start worker", "MainWindow", "Start-Stop"); }
-                    
+                    catch { logger.error("Failed to start worker", "MainWindow", "Start-Stop"); }
+
                 }
                 else
                 {
@@ -233,15 +210,15 @@ namespace FSHS_Desktop_ATC
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             logger.info("Updater Closed\n", "MainWindow", "Close");
-            try{ATC_Display_Data(true);}
-            catch { logger.error("Failed to stop worker", "MainWindow", "Close");}
-            try{whazzup_tfl.DeleteClients();}
-            catch { logger.error("Failed to Delete whazzup clients", "MainWindow", "Close");}
+            try { ATC_Display_Data(true); }
+            catch { logger.error("Failed to stop worker", "MainWindow", "Close"); }
+            try { whazzup_tfl.DeleteClients(); }
+            catch { logger.error("Failed to Delete whazzup clients", "MainWindow", "Close"); }
             this.Close();
         }
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-            info("Manual whazzup updater triggered", "MainWindow", "Update");
+            logger.info("Manual whazzup updater triggered", "MainWindow", "Update");
             try
             {
                 whazzup_tfl.UpdateWithFlightPlans();
