@@ -1,5 +1,5 @@
 ﻿JoinFs Flight Plan Injector
-1.0.0.0
+0.7.5.0
 
 winexe
 C#
@@ -11,7 +11,7 @@ false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\cody\source\repos\JoinFs-Flight-Plan-Injector\App.xaml
 11407045341
-
+11052457538
 82271404
 202150057942
 MainWindow.xaml;

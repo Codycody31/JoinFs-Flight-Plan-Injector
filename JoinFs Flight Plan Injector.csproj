@@ -1,29 +1,44 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <RootNamespace>JoinFs_Flight_Plan_Injector</RootNamespace>
-	<Nullable>enable</Nullable>
-	<UseWPF>true</UseWPF>
-	<ApplicationIcon>Logo2.ico</ApplicationIcon>
-	<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
-	<SelfContained>true</SelfContained>
-	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
-	<PublishReadyToRun>true</PublishReadyToRun>
-	<ApplicationManifest>app.manifest</ApplicationManifest>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Costura.Fody" Version="5.7.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="MySql.Data" Version="8.0.30" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="lib\resources\" />
-  </ItemGroup>
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <RootNamespace>JoinFs_Flight_Plan_Injector</RootNamespace>
+	    <Nullable>enable</Nullable>
+	    <UseWPF>true</UseWPF>
+	    <ApplicationIcon>Logo2.ico</ApplicationIcon>
+	    <PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
+	    <SelfContained>true</SelfContained>
+	    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	    <PublishReadyToRun>true</PublishReadyToRun>
+	    <ApplicationManifest>app.manifest</ApplicationManifest>
+	    <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+    </PropertyGroup>
+    <PropertyGroup>
+        <DebugType>embedded</DebugType>
+        <AssemblyName>JoinFs Flight Plan Injector</AssemblyName>
+        <SignAssembly>False</SignAssembly>
+        <UseWindowsForms>False</UseWindowsForms>
+        <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+        <Version>0.7.5.0</Version>
+        <Authors>Vahn Gomes</Authors>
+        <Description>A middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!</Description>
+        <Copyright>Copyright © 2022 Vahn Gomes</Copyright>
+    </PropertyGroup>								
+    <ItemGroup>
+        <None Remove="lib\images\Logo2.ico" />
+        <None Remove="Logo2.ico" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Costura.Fody" Version="5.7.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="MySql.Data" Version="8.0.30" />
+    </ItemGroup>
+    <ItemGroup>
+    <Resource Include="lib\images\Logo2.ico" />
+	    <Folder Include="lib\images" />
+    <Content Include="Logo2.ico" />
+    </ItemGroup>
 
 </Project>

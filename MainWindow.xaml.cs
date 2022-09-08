@@ -25,7 +25,6 @@ namespace JoinFs_Flight_Plan_Injector
     public partial class MainWindow : Window
     {
         // Add built in .net 6, and ESJFS 3.0.0.6
-        // 
         bool executeMethod;
         whazzup whazzup_tfl = new whazzup();
         IniFile MyIni = new IniFile();
@@ -179,7 +178,7 @@ namespace JoinFs_Flight_Plan_Injector
             {
                 if (JoinFs.IsChecked == true && TFL.IsChecked == true || Other.IsChecked == true)
                 {
-                    logger.info("Updater Started", "MainWindow", "Start-Stop");
+                    logger.info("Injector Started", "MainWindow", "Start-Stop");
                     ButtonControlStartStop.Background = Brushes.Red;
                     ButtonControlStartStop.Content = "STOP";
                     whazzup_tfl.WriteClients();
@@ -197,7 +196,7 @@ namespace JoinFs_Flight_Plan_Injector
             }
             else
             {
-                logger.info("Updater Stopped\n", "MainWindow", "Start-Stop");
+                logger.info("Injector Stopped\n", "MainWindow", "Start-Stop");
                 ButtonControlStartStop.Background = Brushes.Green;
                 ButtonControlStartStop.Content = "START";
                 try { ATC_Display_Data(true); }
@@ -209,7 +208,7 @@ namespace JoinFs_Flight_Plan_Injector
         }
         private void Close_Click(object sender, RoutedEventArgs e)
         {
-            logger.info("Updater Closed\n", "MainWindow", "Close");
+            logger.info("JoinFs Flight Plan Injector Closed\n", "MainWindow", "Close");
             try { ATC_Display_Data(true); }
             catch { logger.error("Failed to stop worker", "MainWindow", "Close"); }
             try { whazzup_tfl.DeleteClients(); }

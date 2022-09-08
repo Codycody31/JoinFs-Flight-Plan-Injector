@@ -1,5 +1,6 @@
-bin/Release/net6.0-windows/publish/**
-bin/Release/net6.0-windows/publish/*
-bin/Debug/**
+bin/Release/*
 bin/Debug/*
-bin/publish/*
+bin/publish
+obj/Release/*
+obj/Debug/*
+obj/publish/*
