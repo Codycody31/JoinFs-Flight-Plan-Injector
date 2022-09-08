@@ -19,7 +19,7 @@
         <SignAssembly>False</SignAssembly>
         <UseWindowsForms>true</UseWindowsForms>
         <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
-        <Version>0.7.5.2</Version>
+        <Version>0.7.5.5</Version>
         <Authors>Vahn Gomes</Authors>
         <Description>A middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!</Description>
         <Copyright>Copyright © 2022 Vahn Gomes</Copyright>

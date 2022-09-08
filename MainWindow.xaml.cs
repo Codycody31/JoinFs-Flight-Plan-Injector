@@ -58,7 +58,7 @@ namespace JoinFs_Flight_Plan_Injector
             {
                 using (StreamWriter sw = File.CreateText("Readme.txt"))
                 {
-                    sw.WriteLine("Use the attached tfl-flightplan.sql file to create the MySQL Database;\r\nthen just add the information of the flight and start the Updater!\r\nIf something isn't showing always check the log file;\r\nOne more thing, the application must run twice for the first time! One to add files and two to for the GUI.\r\nAfter this if you don't remove any files it will work fine!\r\n\r\nCreated by: Vahn Gomes, copyright 2022.");
+                    sw.WriteLine("Use the attached tfl-flightplan.sql file to create the MySQL Database;\r\nthen just add the information of the flight and start the Updater!\r\nIf something isn't showing always check the log file;\r\nOne more thing, the application must run twice for the first time! One to add files and two to for the GUI.\r\nAfter this if you don't remove any files it will work fine!\r\n\r\nAdd Debug mode:\r\n[Debug]\r\nLevel=0-5\r\nCreated by: Vahn Gomes, copyright 2022.");
                     logger.info("ReadMe.txt created!", "MainWindow", "Startup");
                 }
             }
@@ -70,13 +70,14 @@ namespace JoinFs_Flight_Plan_Injector
             MyIni.Write("TFL", "https://tflserver.com", "Web");
             if (!MyIni.KeyExists("whazzup", "Data"))
             {
-                MyIni.Write("whazzup", "C:\\Users\\cody\\Documents\\JoinFS-FSX\\whazzup.txt", "Data");
+                MyIni.Write("whazzup", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\JoinFS-FSX\\whazzup.txt", "Data");
             }
             WhazzupLocation.Text = MyIni.Read("whazzup", "Data");
             MyIni.Write("whazzup_TFL", "whazzup_TFL.txt", "Data");
             if (!File.Exists(MyIni.Read("whazzup", "Data")))
             {
-                MyIni.Write("whazzup", "C:\\Users\\cody\\Documents\\JoinFS-FSX\\whazzup.txt", "Data");
+                
+                MyIni.Write("whazzup", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\JoinFS-FSX\\whazzup.txt", "Data");
                 logger.error("whazzup file location invalid!", "MainWindow", "Startup");
                 MessageBox.Show("whazzup file location invalid!");
             }
