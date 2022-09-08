@@ -122,6 +122,7 @@ namespace JoinFs_Flight_Plan_Injector
             logger.info("Started whazzup_tfl background worker", "MainWindow", "worker_DoWork");
             for (int i = 0; i < 6000; i++)
             {
+                logger.info("Updating Flight Plans", "MainWindow", "worker_DoWork", 5);
                 whazzup_tfl.UpdateWithFlightPlans();
                 try { whazzup_tfl.UpdateWithFlightPlans(); }
                 catch { logger.error("Failed to confirm that whazzup_tfl updated successfully", "MainWindow", "worker_DoWork"); ATC_Display_Data(true); }
@@ -181,7 +182,8 @@ namespace JoinFs_Flight_Plan_Injector
                     logger.info("Injector Started", "MainWindow", "Start-Stop");
                     ButtonControlStartStop.Background = Brushes.Red;
                     ButtonControlStartStop.Content = "STOP";
-                    whazzup_tfl.WriteClients();
+                    try { whazzup_tfl.WriteClients(); }
+                    catch{logger.error("Failed to Write Clients", "MainWindow", "Start-Stop", 2);}
                     try { ATC_Display_Data(); }
                     catch { logger.error("Failed to start worker", "MainWindow", "Start-Stop"); }
 
@@ -189,7 +191,8 @@ namespace JoinFs_Flight_Plan_Injector
                 else
                 {
                     logger.error("Failed Data sources need to be selected", "MainWindow", "Start-Stop");
-                    new IniFile();
+                    try { new IniFile(); }
+                    catch { logger.error("Failed to create new Ini File", "MainWindow", "Start-Stop"); }
                     MessageBox.Show("Data sources need to be selected");
                     executeMethod = false;
                 }

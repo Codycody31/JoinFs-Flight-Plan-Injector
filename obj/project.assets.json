@@ -7929,7 +7929,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "0.7.5",
+    "version": "0.7.5.2",
     "restore": {
       "projectUniqueName": "C:\\Users\\cody\\source\\repos\\JoinFs-Flight-Plan-Injector\\JoinFs Flight Plan Injector.csproj",
       "projectName": "JoinFs Flight Plan Injector",
@@ -8012,7 +8012,7 @@
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           },
-          "Microsoft.WindowsDesktop.App.WPF": {
+          "Microsoft.WindowsDesktop.App": {
             "privateAssets": "none"
           }
         },

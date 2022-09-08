@@ -17,9 +17,9 @@
         <DebugType>embedded</DebugType>
         <AssemblyName>JoinFs Flight Plan Injector</AssemblyName>
         <SignAssembly>False</SignAssembly>
-        <UseWindowsForms>False</UseWindowsForms>
+        <UseWindowsForms>true</UseWindowsForms>
         <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
-        <Version>0.7.5.0</Version>
+        <Version>0.7.5.2</Version>
         <Authors>Vahn Gomes</Authors>
         <Description>A middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!</Description>
         <Copyright>Copyright © 2022 Vahn Gomes</Copyright>
