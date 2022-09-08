@@ -1,6 +1,6 @@
 bin/Release/*
 bin/Debug/*
-bin/publish
+bin/publish/*
 obj/Release/*
 obj/Debug/*
 obj/publish/*
