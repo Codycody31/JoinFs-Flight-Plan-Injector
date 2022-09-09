@@ -38,7 +38,7 @@
     <a href="https://github.com/Codycody31/JoinFs-Flight-Plan-Injector"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://dev.fshs.info/products/JoinFs-Flight-Plan-Injector">View Demo</a>
+    <a href="https://vahngomes.dev/products/JoinFs-Flight-Plan-Injector">View Demo</a>
     ·
     <a href="https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/issues">Report Bug</a>
     ·
@@ -83,12 +83,7 @@ This project was started by Vahn Gomes for the FSHS and TFL Discord groups. The 
 
 
 ### Built With
-* [![PHP][PHP.net]][PHP-url]
-* [![Javascript][javascript.com]][javascript-url]
-* [![HTML][HTML.com]][HTML-url]
-* [![CSS][CSS.com]][CSS-url]
 * [![C#][C#]][C#-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 * [![.net][.net]][.net-url]
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -101,10 +96,6 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-* PHP
-  ```sh
-  https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-windows-x64-8.1.6-0-VS16-installer.exe?from_af=true
-  ```
 * Visual Studio 2022
   ```sh
   https://visualstudio.microsoft.com/vs/
@@ -115,7 +106,7 @@ To get a local copy up and running follow these simple steps.
 
 JoinFs Flight Plan Injector acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!
 
-_For more examples, please refer to the [Documentation](https://dev.fshs.info/products/JoinFs-Flight-Plan-Injector/documentation)_
+_For more examples, please refer to the [Documentation](https://vahngomes.dev/products/JoinFs-Flight-Plan-Injector/documentation)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -124,11 +115,6 @@ _For more examples, please refer to the [Documentation](https://dev.fshs.info/pr
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] JoinFs
-    - [ ] Update Aircraft with Flightplans | Local
-- [ ] TFL
-    - [ ] Get flightplans from database
-    - [ ] Update flightplans with info from radar scope
 - [ ] FSX
     - [ ] Update Aircraft with Flightplans using FSUIPC| Local
     - [ ] Convert aircraft info to whazzup File
