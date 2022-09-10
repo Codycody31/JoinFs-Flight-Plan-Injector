@@ -26,10 +26,14 @@
         <Copyright>Copyright © 2022 Vahn Gomes</Copyright>
     </PropertyGroup>								
     <ItemGroup>
+        <None Remove="lib\Flight Plan Injector Manual.pdf" />
         <None Remove="lib\images\Logo2.ico" />
         <None Remove="Logo2.ico" />
     </ItemGroup>
     <ItemGroup>
+    <Content Include="lib\Flight Plan Injector Manual.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="lib\images\Logo2.ico" />
 	    <Folder Include="lib\images" />
     <Content Include="Logo2.ico" />
