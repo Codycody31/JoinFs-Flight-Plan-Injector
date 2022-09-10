@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Windows;
 
 namespace JoinFs_Flight_Plan_Injector
 {
@@ -9,10 +10,6 @@ namespace JoinFs_Flight_Plan_Injector
         IniFile MyIni = new IniFile();
         public logger()
         {
-            if (!File.Exists(path))
-            {
-                File.CreateText(path);
-            }
         }
         public void info(string log, string source, string sourcefunction, int Debug = 0)
         {

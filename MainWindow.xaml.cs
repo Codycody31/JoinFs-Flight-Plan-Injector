@@ -17,16 +17,17 @@ namespace JoinFs_Flight_Plan_Injector
     {
         // Add built in .net 6, and ESJFS 3.0.0.6
         bool executeMethod;
+        logger logger = new logger();
         whazzup whazzup_tfl = new whazzup();
         IniFile MyIni = new IniFile();
-        logger logger = new logger();
+        
         string path = "log.txt";
         public MainWindow()
         {
             InitializeComponent();
-            if (!File.Exists("log.txt"))
+            if (!File.Exists(path))
             {
-                File.CreateText("log.txt");
+               File.CreateText(path);
             }
             if (!File.Exists("LICENSE.txt"))
             {
@@ -57,9 +58,9 @@ namespace JoinFs_Flight_Plan_Injector
             if (!MyIni.KeyExists("DefaultVolume", "Audio"))
             {
                 MyIni.Write("DefaultVolume", "100", "Audio");
+                MyIni.Write("FSHS", "https://dev.fshs.info", "Web");
+                MyIni.Write("TFL", "https://tflserver.com", "Web");
             }
-            MyIni.Write("FSHS", "https://dev.fshs.info", "Web");
-            MyIni.Write("TFL", "https://tflserver.com", "Web");
             if (!MyIni.KeyExists("whazzup", "Data"))
             {
                 MyIni.Write("whazzup", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\JoinFS-FSX\\whazzup.txt", "Data");
