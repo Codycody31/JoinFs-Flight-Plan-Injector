@@ -7,9 +7,10 @@
 	    <UseWPF>true</UseWPF>
 	    <ApplicationIcon>Logo2.ico</ApplicationIcon>
 	    <PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
-	    <SelfContained>true</SelfContained>
+	    <SelfContained>false</SelfContained>
 	    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-	    <PublishReadyToRun>true</PublishReadyToRun>
+		<PublishSingleFile>false</PublishSingleFile>
+		<PublishReadyToRun>False</PublishReadyToRun>
 	    <ApplicationManifest>app.manifest</ApplicationManifest>
 	    <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
     </PropertyGroup>
@@ -19,7 +20,7 @@
         <SignAssembly>False</SignAssembly>
         <UseWindowsForms>true</UseWindowsForms>
         <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
-        <Version>0.7.5.5</Version>
+        <Version>0.7.5.6</Version>
         <Authors>Vahn Gomes</Authors>
         <Description>A middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!</Description>
         <Copyright>Copyright © 2022 Vahn Gomes</Copyright>
@@ -29,16 +30,12 @@
         <None Remove="Logo2.ico" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Costura.Fody" Version="5.7.0">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-        <PackageReference Include="MySql.Data" Version="8.0.30" />
-    </ItemGroup>
-    <ItemGroup>
     <Resource Include="lib\images\Logo2.ico" />
 	    <Folder Include="lib\images" />
     <Content Include="Logo2.ico" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="MySql.Data" Version="8.0.30" />
     </ItemGroup>
 
 </Project>

@@ -1,21 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
+using System.Reflection;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace JoinFs_Flight_Plan_Injector
 {
@@ -62,6 +53,7 @@ namespace JoinFs_Flight_Plan_Injector
                     logger.info("ReadMe.txt created!", "MainWindow", "Startup");
                 }
             }
+            if (!File.Exists("Manual.txt")) { }
             if (!MyIni.KeyExists("DefaultVolume", "Audio"))
             {
                 MyIni.Write("DefaultVolume", "100", "Audio");
