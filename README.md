@@ -38,7 +38,7 @@
     <a href="https://github.com/Codycody31/JoinFs-Flight-Plan-Injector"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://dev.fshs.info/products/JoinFs-Flight-Plan-Injector">View Demo</a>
+    <a href="https://vahngomes.dev/products/JoinFs-Flight-Plan-Injector">View Demo</a>
     ·
     <a href="https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/issues">Report Bug</a>
     ·
@@ -106,7 +106,7 @@ To get a local copy up and running follow these simple steps.
 
 JoinFs Flight Plan Injector acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!
 
-_For more examples, please refer to the [Documentation](https://dev.fshs.info/products/JoinFs-Flight-Plan-Injector/documentation)_
+_For more examples, please refer to the [Documentation](https://vahngomes.dev/products/JoinFs-Flight-Plan-Injector/documentation)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
