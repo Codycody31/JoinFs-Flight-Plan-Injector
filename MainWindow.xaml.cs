@@ -15,12 +15,12 @@ namespace JoinFs_Flight_Plan_Injector
     /// </summary>
     public partial class MainWindow : Window
     {
-        // Add built in .net 6, and ESJFS 3.0.0.6
+        // Enable self-contained for built in .net 6.0
+        // Default set to framework dependent
         bool executeMethod;
         logger logger = new logger();
         whazzup whazzup_tfl = new whazzup();
         IniFile MyIni = new IniFile();
-        
         string path = "log.txt";
         public MainWindow()
         {

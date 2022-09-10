@@ -115,7 +115,7 @@ namespace JoinFs_Flight_Plan_Injector
             int ToServers = whazzup_content.LastIndexOf("!SERVERS");
             string CLIENTS = whazzup_content.Substring(FromClients, ToServers - FromClients);
             string[] CLIENTSAircraft = CLIENTS.Split('\n');
-            logger.info("Extracting information fro JoinFs whazzup File", "whazzup", "UpdateWithFlightPlans", 5);
+            logger.info("Extracting information from JoinFs whazzup File", "whazzup", "UpdateWithFlightPlans", 5);
             //figure out how to check flightplan database and add aircraft
 
             for (int i = 1; i < CLIENTSAircraft.Length - 1; i++)
