@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
+using System.Media;
 using System.Reflection;
 using System.Threading;
 using System.Windows;
@@ -15,6 +16,7 @@ namespace JoinFs_Flight_Plan_Injector
     /// </summary>
     public partial class MainWindow : Window
     {
+       
         // Enable self-contained for built in .net 6.0
         // Default set to framework dependent
         bool executeMethod;
@@ -60,6 +62,8 @@ namespace JoinFs_Flight_Plan_Injector
                 MyIni.Write("DefaultVolume", "100", "Audio");
                 MyIni.Write("FSHS", "https://dev.fshs.info", "Web");
                 MyIni.Write("TFL", "https://tflserver.com", "Web");
+                MyIni.Write("VG", "https://vahngomes.dev", "Web");
+                MyIni.Write("version", System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString(), "Data");
             }
             if (!MyIni.KeyExists("whazzup", "Data"))
             {
@@ -233,6 +237,13 @@ namespace JoinFs_Flight_Plan_Injector
         {
             JoinFs.IsChecked = false;
             TFL.IsChecked = false;
+        }
+        //not in use
+        private void MainWindow_Settings_Click(object sender, RoutedEventArgs e)
+        {
+            Settings settings = new Settings();
+            settings.Owner = this;
+            settings.Show();
         }
     }
 }

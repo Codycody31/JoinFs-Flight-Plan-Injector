@@ -16,7 +16,7 @@
             <RowDefinition Height="90*"/>
             <RowDefinition Height="35*"/>
         </Grid.RowDefinitions>
-        <Label x:Name="version" Content="V 0.7.5.6-x64" HorizontalAlignment="Left" Margin="155,0,0,0" VerticalAlignment="Center" Foreground="Wheat" FontSize="10" Height="23" Width="72"/>
+        <Label x:Name="version" Content="V 0.7.8.0-x64" HorizontalAlignment="Left" Margin="155,0,0,0" VerticalAlignment="Center" Foreground="Wheat" FontSize="10" Height="23" Width="72"/>
         <TextBox FontSize="9" x:Name="WhazzupLocation" IsEnabled="False" HorizontalAlignment="Left" Margin="10,31,0,0" Grid.Row="2" TextWrapping="NoWrap" VerticalAlignment="Top" Width="200" Height="18" TextChanged="WhazzupLocation_TextChanged"/>
         <CheckBox Checked="SpecifyWhazzupLocation_Checked" Unchecked="SpecifyWhazzupLocation_UnChecked" x:Name="SpecifyWhazzupLocation" Content="Specify Whazzup Location" Foreground="Wheat" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Height="15" Width="158"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="vahngomes.dev" VerticalAlignment="Top" FontSize="10" Foreground="Wheat" Width="77" Height="13"/>
@@ -29,6 +29,7 @@
         <Separator Margin="0,17,0,167" Foreground="Wheat" Grid.RowSpan="2"/>
         <CheckBox IsChecked="True" x:Name="TFL" Content="TFL" HorizontalAlignment="Left" Margin="160,57,0,0" Foreground="Wheat" Grid.Row="1" VerticalAlignment="Top"/>
         <Button Content="Update" Click="Update_Click" Height="28" Width="48" HorizontalAlignment="Left" Margin="167,142,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <!--<Button Content="Settings" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Height="28" Width="48" Click="MainWindow_Settings_Click" Grid.Row="1"/>-->
     </Grid>
 
 </Window>

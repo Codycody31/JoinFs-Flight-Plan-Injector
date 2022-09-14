@@ -1,20 +1,20 @@
 ﻿JoinFs Flight Plan Injector
-0.7.5.6
+0.7.8.0
 
 winexe
 C#
 .cs
-C:\Users\cody\source\repos\JoinFs-Flight-Plan-Injector\obj\Debug\net6.0-windows\win-x64\
+C:\Users\Vahn\source\repos\JoinFs-Flight-Plan-Injector\obj\Debug\net6.0-windows\win-x64\
 JoinFs_Flight_Plan_Injector
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\cody\source\repos\JoinFs-Flight-Plan-Injector\App.xaml
-11407045341
-11052457538
-82271404
-211-1521597151
-MainWindow.xaml;
+C:\Users\Vahn\source\repos\JoinFs-Flight-Plan-Injector\App.xaml
+2636045758
+2-1582952181
+91001119389
+211-1034190098
+MainWindow.xaml;Settings.xaml;
 
 False
 

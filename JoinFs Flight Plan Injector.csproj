@@ -20,14 +20,17 @@
         <SignAssembly>False</SignAssembly>
         <UseWindowsForms>true</UseWindowsForms>
         <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
-        <Version>0.7.5.6</Version>
+        <Version>0.7.8.0</Version>
         <Authors>Vahn Gomes</Authors>
         <Description>A middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!</Description>
         <Copyright>Copyright © 2022 Vahn Gomes</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     </PropertyGroup>								
     <ItemGroup>
         <None Remove="lib\Flight Plan Injector Manual.pdf" />
         <None Remove="lib\images\Logo2.ico" />
+        <None Remove="LICENSE.txt" />
         <None Remove="Logo2.ico" />
     </ItemGroup>
     <ItemGroup>
@@ -35,11 +38,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="lib\images\Logo2.ico" />
+    <Resource Include="LICENSE.txt" />
 	    <Folder Include="lib\images" />
     <Content Include="Logo2.ico" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="MySql.Data" Version="8.0.30" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Injector Updater\Injector Updater.csproj" />
     </ItemGroup>
 
 </Project>
