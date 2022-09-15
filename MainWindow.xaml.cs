@@ -80,6 +80,13 @@ namespace JoinFs_Flight_Plan_Injector
             }
             logger.status("Startup completed!", "MainWindow", "Startup");
         }
+        public string CurrentPath
+        {
+            get
+            {
+                return "V " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString() + "-x64";
+            }
+        }
         public void ATC_Display_Data(bool cancel = false)
         {
             BackgroundWorker worker = new BackgroundWorker();

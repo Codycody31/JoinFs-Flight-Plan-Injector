@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\Vahn\\source\\repos\\Injector Updater\\Injector Updater.csproj": {
-      "version": "0.7.8",
+      "version": "0.8.5",
       "restore": {
         "projectUniqueName": "C:\\Users\\Vahn\\source\\repos\\Injector Updater\\Injector Updater.csproj",
         "projectName": "Updater",
@@ -77,7 +77,7 @@
       }
     },
     "C:\\Users\\Vahn\\source\\repos\\JoinFs-Flight-Plan-Injector\\JoinFs Flight Plan Injector.csproj": {
-      "version": "0.7.8",
+      "version": "0.8.5",
       "restore": {
         "projectUniqueName": "C:\\Users\\Vahn\\source\\repos\\JoinFs-Flight-Plan-Injector\\JoinFs Flight Plan Injector.csproj",
         "projectName": "JoinFs Flight Plan Injector",

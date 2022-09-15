@@ -16,7 +16,7 @@
             <RowDefinition Height="90*"/>
             <RowDefinition Height="35*"/>
         </Grid.RowDefinitions>
-        <Label x:Name="version" Content="V 0.7.8.0-x64" HorizontalAlignment="Left" Margin="155,0,0,0" VerticalAlignment="Center" Foreground="Wheat" FontSize="10" Height="23" Width="72"/>
+        <Label x:Name="version" Content="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=CurrentPath, Mode=OneTime}" HorizontalAlignment="Left" Margin="155,0,0,0" VerticalAlignment="Center" Foreground="Wheat" FontSize="10" Height="23" Width="72"/>
         <TextBox FontSize="9" x:Name="WhazzupLocation" IsEnabled="False" HorizontalAlignment="Left" Margin="10,31,0,0" Grid.Row="2" TextWrapping="NoWrap" VerticalAlignment="Top" Width="200" Height="18" TextChanged="WhazzupLocation_TextChanged"/>
         <CheckBox Checked="SpecifyWhazzupLocation_Checked" Unchecked="SpecifyWhazzupLocation_UnChecked" x:Name="SpecifyWhazzupLocation" Content="Specify Whazzup Location" Foreground="Wheat" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Height="15" Width="158"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="vahngomes.dev" VerticalAlignment="Top" FontSize="10" Foreground="Wheat" Width="77" Height="13"/>

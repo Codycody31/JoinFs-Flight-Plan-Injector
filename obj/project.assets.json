@@ -271,7 +271,7 @@
           }
         }
       },
-      "Updater/0.7.8": {
+      "Updater/0.8.5": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -508,7 +508,7 @@
           "runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll": {}
         }
       },
-      "Updater/0.7.8": {
+      "Updater/0.8.5": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1088,7 +1088,7 @@
         "version.txt"
       ]
     },
-    "Updater/0.7.8": {
+    "Updater/0.8.5": {
       "type": "project",
       "path": "../Injector Updater/Injector Updater.csproj",
       "msbuildProject": "../Injector Updater/Injector Updater.csproj"
@@ -1097,7 +1097,7 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "MySql.Data >= 8.0.30",
-      "Updater >= 0.7.8"
+      "Updater >= 0.8.5"
     ]
   },
   "packageFolders": {
@@ -1105,7 +1105,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "0.7.8",
+    "version": "0.8.5",
     "restore": {
       "projectUniqueName": "C:\\Users\\Vahn\\source\\repos\\JoinFs-Flight-Plan-Injector\\JoinFs Flight Plan Injector.csproj",
       "projectName": "JoinFs Flight Plan Injector",
