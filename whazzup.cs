@@ -94,6 +94,7 @@ namespace JoinFs_Flight_Plan_Injector
         }
         public void UpdateWithFlightPlans()
         {
+            //TODO: Check ini for custom database and table
             logger.info("Function UpdateWithFlightPlans Called", "whazzup", "UpdateWithFlightPlans", 5);
             //open mysql connection
             conn.Open();
@@ -128,6 +129,7 @@ namespace JoinFs_Flight_Plan_Injector
                 MySqlDataReader reader = null;
                 try
                 {
+                    //TODO: allow parsing on of groups own database instead of default
                     cmd = new MySqlCommand("SELECT * FROM flightplan WHERE callsign='" + WhazzupAircraftInfo[0] + "'", conn);
                     reader = cmd.ExecuteReader();
                     logger.info("SQL Query: SELECT * FROM flightplan WHERE callsign=" + WhazzupAircraftInfo[0], "whazzup", "UpdateWithCallsigns", 5);

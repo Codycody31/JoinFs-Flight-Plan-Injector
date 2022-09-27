@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JoinFs Flight Plan Injector", "JoinFs Flight Plan Injector.csproj", "{8F672CDD-FFE0-4631-B3BB-306B669B8FE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Injector Updater", "..\Injector Updater\Injector Updater.csproj", "{AEFD2F3F-3FDE-4A0D-8CBD-6D352C1A2AFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Injector Updater", "..\Injector Updater\Injector Updater.csproj", "{AEFD2F3F-3FDE-4A0D-8CBD-6D352C1A2AFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFL ATC Portal", "..\TFL ATC Portal\TFL ATC Portal.csproj", "{630B7314-7A7E-472B-92A1-F30D7796A15A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AEFD2F3F-3FDE-4A0D-8CBD-6D352C1A2AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEFD2F3F-3FDE-4A0D-8CBD-6D352C1A2AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEFD2F3F-3FDE-4A0D-8CBD-6D352C1A2AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{630B7314-7A7E-472B-92A1-F30D7796A15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630B7314-7A7E-472B-92A1-F30D7796A15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630B7314-7A7E-472B-92A1-F30D7796A15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630B7314-7A7E-472B-92A1-F30D7796A15A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

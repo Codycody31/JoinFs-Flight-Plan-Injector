@@ -8,7 +8,7 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-
+using MahApps.Metro;
 namespace JoinFs_Flight_Plan_Injector
 {
     /// <summary>
@@ -17,19 +17,19 @@ namespace JoinFs_Flight_Plan_Injector
     public partial class MainWindow : Window
     {
        
-        // Enable self-contained for built in .net 6.0
-        // Default set to framework dependent
+        // Enable self-contained for built in .net 6.0. Default set to framework dependent
         bool executeMethod;
         logger logger = new logger();
         whazzup whazzup_tfl = new whazzup();
         IniFile MyIni = new IniFile();
+        WhazzupFile WhazzupFile = new WhazzupFile();
         string path = "log.txt";
         public MainWindow()
         {
             InitializeComponent();
             if (!File.Exists(path))
             {
-               File.CreateText(path);
+                File.CreateText(path);
             }
             if (!File.Exists("LICENSE.txt"))
             {
@@ -64,6 +64,7 @@ namespace JoinFs_Flight_Plan_Injector
                 MyIni.Write("TFL", "https://tflserver.com", "Web");
                 MyIni.Write("VG", "https://vahngomes.dev", "Web");
                 MyIni.Write("version", System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString(), "Data");
+                MyIni.Write("ThreadUpdateSpeed", "500", "Data");
             }
             if (!MyIni.KeyExists("whazzup", "Data"))
             {
@@ -73,12 +74,16 @@ namespace JoinFs_Flight_Plan_Injector
             MyIni.Write("whazzup_TFL", "whazzup_TFL.txt", "Data");
             if (!File.Exists(MyIni.Read("whazzup", "Data")))
             {
-                
+
                 MyIni.Write("whazzup", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\JoinFS-FSX\\whazzup.txt", "Data");
                 logger.error("whazzup file location invalid!", "MainWindow", "Startup");
                 MessageBox.Show("whazzup file location invalid!");
             }
             logger.status("Startup completed!", "MainWindow", "Startup");
+        }
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            logger.status("Shutdown completed!\n", "MainWindow", "Suspension");
         }
         public string CurrentPath
         {
@@ -127,11 +132,12 @@ namespace JoinFs_Flight_Plan_Injector
             logger.info("Started whazzup_tfl background worker", "MainWindow", "worker_DoWork");
             for (int i = 0; i < 6000; i++)
             {
+                var ThreadSleepTime = MyIni.Read("ThreadUpdateSpeed", "Data");
                 logger.info("Updating Flight Plans", "MainWindow", "worker_DoWork", 5);
                 whazzup_tfl.UpdateWithFlightPlans();
                 try { whazzup_tfl.UpdateWithFlightPlans(); }
                 catch { logger.error("Failed to confirm that whazzup_tfl updated successfully", "MainWindow", "worker_DoWork"); ATC_Display_Data(true); }
-                finally { Thread.Sleep(500); }
+                finally { Thread.Sleep(Convert.ToInt32(ThreadSleepTime)); }
             }
             logger.info("Stopped whazzup_tfl background worker", "MainWindow", "worker_DoWork");
             CheckATC();
@@ -182,7 +188,7 @@ namespace JoinFs_Flight_Plan_Injector
             executeMethod = !executeMethod;
             if (executeMethod == true)
             {
-                if (JoinFs.IsChecked == true && TFL.IsChecked == true || Other.IsChecked == true)
+                if (TFL.IsChecked == true && Other.IsChecked == false || TFL.IsChecked == false && Other.IsChecked == true)
                 {
                     logger.info("Injector Started", "MainWindow", "Start-Stop");
                     ButtonControlStartStop.Background = Brushes.Red;
@@ -195,10 +201,10 @@ namespace JoinFs_Flight_Plan_Injector
                 }
                 else
                 {
-                    logger.error("Failed Data sources need to be selected", "MainWindow", "Start-Stop");
+                    logger.error("Failed to start injector, Data sources need to be selected", "MainWindow", "Start-Stop");
                     try { new IniFile(); }
                     catch { logger.error("Failed to create new Ini File", "MainWindow", "Start-Stop"); }
-                    MessageBox.Show("Data sources need to be selected");
+                    MessageBox.Show("Data sources need to be selected correctly!");
                     executeMethod = false;
                 }
             }
@@ -237,12 +243,10 @@ namespace JoinFs_Flight_Plan_Injector
         }
         private void Other_UnChecked(object sender, RoutedEventArgs e)
         {
-            JoinFs.IsChecked = true;
             TFL.IsChecked = true;
         }
         private void Other_Checked(object sender, RoutedEventArgs e)
         {
-            JoinFs.IsChecked = false;
             TFL.IsChecked = false;
         }
         //not in use

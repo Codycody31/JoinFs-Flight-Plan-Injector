@@ -8,7 +8,7 @@
       "version": "0.8.5",
       "restore": {
         "projectUniqueName": "C:\\Users\\Vahn\\source\\repos\\Injector Updater\\Injector Updater.csproj",
-        "projectName": "Injector Updater",
+        "projectName": "Updater",
         "projectPath": "C:\\Users\\Vahn\\source\\repos\\Injector Updater\\Injector Updater.csproj",
         "packagesPath": "C:\\Users\\Vahn\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vahn\\source\\repos\\Injector Updater\\obj\\",
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -55,8 +55,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -78,7 +77,7 @@
       }
     },
     "C:\\Users\\Vahn\\source\\repos\\JoinFs-Flight-Plan-Injector\\JoinFs Flight Plan Injector.csproj": {
-      "version": "0.8.6",
+      "version": "0.8.5",
       "restore": {
         "projectUniqueName": "C:\\Users\\Vahn\\source\\repos\\JoinFs-Flight-Plan-Injector\\JoinFs Flight Plan Injector.csproj",
         "projectName": "JoinFs Flight Plan Injector",
@@ -95,7 +94,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -121,10 +120,6 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "MahApps.Metro": {
-              "target": "Package",
-              "version": "[2.4.9, )"
-            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.30, )"
@@ -136,8 +131,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -149,7 +143,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

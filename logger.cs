@@ -15,7 +15,7 @@ namespace JoinFs_Flight_Plan_Injector
         {
             using (StreamWriter stream = new FileInfo(path).AppendText())
             {
-                if(MyIni.KeyExists("Level", "Debug"))
+                if (MyIni.KeyExists("Level", "Debug"))
                 {
                     if (Convert.ToInt32(MyIni.Read("Level", "Debug")) >= Debug)
                     {

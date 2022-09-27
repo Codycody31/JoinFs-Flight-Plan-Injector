@@ -20,7 +20,7 @@
         <SignAssembly>False</SignAssembly>
         <UseWindowsForms>true</UseWindowsForms>
         <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
-        <Version>0.8.5.0</Version>
+        <Version>0.8.6.0</Version>
         <Authors>Vahn Gomes</Authors>
         <Description>A middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!</Description>
         <Copyright>Copyright © 2022 Vahn Gomes</Copyright>
@@ -43,10 +43,16 @@
     <Content Include="Logo2.ico" />
     </ItemGroup>
     <ItemGroup>
+      <PackageReference Include="MahApps.Metro" Version="2.4.9" />
       <PackageReference Include="MySql.Data" Version="8.0.30" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\Injector Updater\Injector Updater.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Reference Include="MahApps.Metro">
+        <HintPath>..\..\..\.nuget\packages\mahapps.metro\2.4.9\lib\netcoreapp3.1\MahApps.Metro.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

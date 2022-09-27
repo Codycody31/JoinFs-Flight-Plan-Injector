@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<iasettings>
+  <projectproperties>
+    <manufacturer>Vahn</manufacturer>
+    <productname>JoinFs Flight Plan Injector</productname>
+    <productversion>0.8.5.0</productversion>
+    <productcode>{99eaf70a-7973-4467-ae2b-00fbed1e366b}</productcode>
+    <upgradecode>{ca676a80-0140-4b5b-91ee-fd1e4e817b48}</upgradecode>
+    <language>0</language>
+    <languagename>English</languagename>
+  </projectproperties>
+  <summary>
+    <title>JoinFs Flight Plan Injector</title>
+    <subject>JoinFs Flight Plan Injector</subject>
+    <author>Vahn</author>
+    <summarycomments>JoinFs Flight Plan Injector</summarycomments>
+    <revisioncode>{3fb618dd-8cb0-4d9b-b3e3-7df7e1ffa5c0}</revisioncode>
+    <uacelevation>highestAvailable</uacelevation>
+  </summary>
+  <addremove>
+    <publishername>Vahn</publishername>
+    <contactname>Vahn</contactname>
+    <helplink>http://www.mywebsite.com</helplink>
+    <productupdatelink>http://www.mywebsite.com</productupdatelink>
+    <addremovecomments>All Rights Reserved</addremovecomments>
+    <iconfile />
+  </addremove>
+  <codegen>
+    <generateincludefiles>0</generateincludefiles>
+    <generatefeatures>1</generatefeatures>
+    <refreshscript>1</refreshscript>
+  </codegen>
+  <compilervariables>
+    <variables />
+  </compilervariables>
+  <build>
+    <buildtype>0</buildtype>
+    <buildasmsi>False</buildasmsi>
+    <cachesources>1</cachesources>
+  </build>
+  <targetfolders />
+  <files>
+    <filedetails filename="C:\Users\Vahn\source\repos\JoinFs-Flight-Plan-Injector\bin\Debug\net6.0-windows\win-x64\JoinFs Flight Plan Injector.dll" targetlocation="$TARGETDIR$" type="1" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="1" runprogram="1" installfilecommand="1" VsProjectOutputfile ="1" />
+    <filedetails filename="C:\Users\Vahn\source\repos\Injector Updater\bin\Debug\net6.0-windows\win-x64\Injector Updater.dll" targetlocation="$TARGETDIR$" type="1" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="1" runprogram="0" installfilecommand="1" VsProjectOutputfile ="1" />
+    <filedetails filename="C:\Users\Vahn\source\repos\TFL ATC Portal\bin\Debug\net6.0-windows\win-x64\TFL ATC Portal.dll" targetlocation="$TARGETDIR$" type="1" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="1" runprogram="0" installfilecommand="1" VsProjectOutputfile ="1" />
+  </files>
+  <dependencies />
+  <registry />
+  <dialogtheme>
+    <themename>Official</themename>
+  </dialogtheme>
+  <authenticode>
+    <sign>0</sign>
+    <mode>0</mode>
+    <certificatefile />
+    <keyfile />
+    <pfxfile />
+    <productinfourl />
+    <authpassword />
+    <timestampurl>http://time.certum.pl</timestampurl>
+    <evCertFile />
+    <evKeyContainerName />
+    <signall>0</signall>
+  </authenticode>
+  <compression>
+    <compressiontype>6</compressiontype>
+    <encrypt>0</encrypt>
+    <compressionpassword />
+  </compression>
+  <output>
+    <outputtype>0</outputtype>
+    <location />
+    <filename />
+    <calculatefilehash>0</calculatefilehash>
+    <refreshrevisioncode>1</refreshrevisioncode>
+  </output>
+</iasettings>
