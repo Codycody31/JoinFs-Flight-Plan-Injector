@@ -104,7 +104,7 @@ To get a local copy up and running follow these simple steps.
 ## Usage
 
 
-JoinFs Flight Plan Injector acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!
+JoinFs Flight Plan Injector acts as a middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC or Euroscope!
 
 _For more examples, please refer to the [Documentation](https://vahngomes.dev/products/JoinFs-Flight-Plan-Injector/documentation)_
 
