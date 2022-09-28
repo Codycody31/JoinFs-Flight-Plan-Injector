@@ -22,7 +22,6 @@ namespace JoinFs_Flight_Plan_Injector
         logger logger = new logger();
         whazzup whazzup_tfl = new whazzup();
         IniFile MyIni = new IniFile();
-        WhazzupFile WhazzupFile = new WhazzupFile();
         string path = "log.txt";
         public MainWindow()
         {
@@ -222,11 +221,11 @@ namespace JoinFs_Flight_Plan_Injector
         }
         private void Close_Click(object sender, RoutedEventArgs e)
         {
-            logger.info("JoinFs Flight Plan Injector Closed\n", "MainWindow", "Close");
             try { ATC_Display_Data(true); }
             catch { logger.error("Failed to stop worker", "MainWindow", "Close"); }
             try { whazzup_tfl.DeleteClients(); }
             catch { logger.error("Failed to Delete whazzup clients", "MainWindow", "Close"); }
+            logger.status("Shutdown completed!\n", "MainWindow", "Suspension");
             this.Close();
         }
         private void Update_Click(object sender, RoutedEventArgs e)

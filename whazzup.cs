@@ -95,10 +95,10 @@ namespace JoinFs_Flight_Plan_Injector
         public void UpdateWithFlightPlans()
         {
             //TODO: Check ini for custom database and table
+            var MyIni = new IniFile();
             logger.info("Function UpdateWithFlightPlans Called", "whazzup", "UpdateWithFlightPlans", 5);
             //open mysql connection
             conn.Open();
-            var MyIni = new IniFile();
             string? UpdatedCLIENTAircraft = null;
             StreamReader? whazzup = null;
             var path = MyIni.Read("whazzup", "Data");

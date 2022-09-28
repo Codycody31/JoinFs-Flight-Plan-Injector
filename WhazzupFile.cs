@@ -7,8 +7,6 @@ using System.Threading.Tasks;
 
 namespace JoinFs_Flight_Plan_Injector
 {
-    //TODO: add class for reading all information of whazzup file, publish to website
-    //INFO: Not ready to be used yet!
     public class WhazzupFile
     {
         string whazzupPath = null;

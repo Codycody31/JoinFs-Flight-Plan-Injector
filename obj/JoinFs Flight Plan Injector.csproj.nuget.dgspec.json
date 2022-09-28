@@ -107,6 +107,9 @@
             "projectReferences": {
               "C:\\Users\\Vahn\\source\\repos\\Injector Updater\\Injector Updater.csproj": {
                 "projectPath": "C:\\Users\\Vahn\\source\\repos\\Injector Updater\\Injector Updater.csproj"
+              },
+              "C:\\Users\\Vahn\\source\\repos\\TFL ATC Portal\\TFL ATC Portal.csproj": {
+                "projectPath": "C:\\Users\\Vahn\\source\\repos\\TFL ATC Portal\\TFL ATC Portal.csproj"
               }
             }
           }
@@ -125,6 +128,79 @@
               "target": "Package",
               "version": "[2.4.9, )"
             },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.30, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Vahn\\source\\repos\\TFL ATC Portal\\TFL ATC Portal.csproj": {
+      "version": "0.1.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Vahn\\source\\repos\\TFL ATC Portal\\TFL ATC Portal.csproj",
+        "projectName": "TFL ATC Portal",
+        "projectPath": "C:\\Users\\Vahn\\source\\repos\\TFL ATC Portal\\TFL ATC Portal.csproj",
+        "packagesPath": "C:\\Users\\Vahn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vahn\\source\\repos\\TFL ATC Portal\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Vahn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.30, )"

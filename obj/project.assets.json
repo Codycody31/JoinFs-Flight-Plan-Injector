@@ -415,6 +415,22 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "TFL ATC Portal/0.1.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MySql.Data": "8.0.30"
+        },
+        "compile": {
+          "bin/placeholder/TFL ATC Portal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TFL ATC Portal.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
       }
     },
     "net6.0-windows7.0/win-x64": {
@@ -782,6 +798,22 @@
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "TFL ATC Portal/0.1.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MySql.Data": "8.0.30"
+        },
+        "compile": {
+          "bin/placeholder/TFL ATC Portal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TFL ATC Portal.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
         ]
       }
     }
@@ -1453,13 +1485,19 @@
       "type": "project",
       "path": "../Injector Updater/Injector Updater.csproj",
       "msbuildProject": "../Injector Updater/Injector Updater.csproj"
+    },
+    "TFL ATC Portal/0.1.0": {
+      "type": "project",
+      "path": "../TFL ATC Portal/TFL ATC Portal.csproj",
+      "msbuildProject": "../TFL ATC Portal/TFL ATC Portal.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "Injector Updater >= 0.8.5",
       "MahApps.Metro >= 2.4.9",
-      "MySql.Data >= 8.0.30"
+      "MySql.Data >= 8.0.30",
+      "TFL ATC Portal >= 0.1.0"
     ]
   },
   "packageFolders": {
@@ -1496,6 +1534,9 @@
           "projectReferences": {
             "C:\\Users\\Vahn\\source\\repos\\Injector Updater\\Injector Updater.csproj": {
               "projectPath": "C:\\Users\\Vahn\\source\\repos\\Injector Updater\\Injector Updater.csproj"
+            },
+            "C:\\Users\\Vahn\\source\\repos\\TFL ATC Portal\\TFL ATC Portal.csproj": {
+              "projectPath": "C:\\Users\\Vahn\\source\\repos\\TFL ATC Portal\\TFL ATC Portal.csproj"
             }
           }
         }

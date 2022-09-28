@@ -48,6 +48,7 @@
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\Injector Updater\Injector Updater.csproj" />
+      <ProjectReference Include="..\TFL ATC Portal\TFL ATC Portal.csproj" />
     </ItemGroup>
     <ItemGroup>
       <Reference Include="MahApps.Metro">
