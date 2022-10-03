@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JoinFs_Flight_Plan_Injector"
-        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="JoinFs_Flight_Plan_Injector.MainWindow"
+        x:Class="JoinFs_Flight_Plan_Injector.MainWindow"
         mc:Ignorable="d"
         ResizeMode="NoResize"
         WindowState="Normal"
@@ -24,7 +24,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="10,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="vahngomes.dev" VerticalAlignment="Top" FontSize="10" Foreground="Wheat" Width="77" Height="13"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="vahngomes.dev" VerticalAlignment="Top" FontSize="10" Foreground="Wheat" Width="77" Height="13"/>
         <Label Content="Data Source" Margin="148,10,0,0" Foreground="Wheat" Grid.Row="1" VerticalAlignment="Top" Height="26" HorizontalAlignment="Left" Width="75"/>
-        <CheckBox x:Name="Other" Content="Other" Foreground="Wheat" Margin="155,56,0,0" Grid.Row="1" VerticalAlignment="Top" Height="15" Checked="Other_Checked" Unchecked="Other_UnChecked" HorizontalAlignment="Left" Width="55"/>
+        <CheckBox x:Name="Other" Content="Other" Foreground="Wheat" Margin="155,56,0,0" Grid.Row="1" VerticalAlignment="Top" Height="15" HorizontalAlignment="Left" Width="55"/>
         <Button x:Name="ButtonControlStartStop" Click="StartStop_Clicked" Content="START" Background="Green" HorizontalAlignment="Left" Margin="10,23,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="48"/>
         <Button Content="CLOSE" Click="Close_Click" HorizontalAlignment="Left" Margin="63,23,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="48"/>
         <TextBlock HorizontalAlignment="Left" Margin="145,49,0,0" Grid.Row="2" TextWrapping="Wrap" Text="By Vahn Gomes" VerticalAlignment="Top" FontSize="10" Foreground="Wheat" Width="78" Height="13"/>

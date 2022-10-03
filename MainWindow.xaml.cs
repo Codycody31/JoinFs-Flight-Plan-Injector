@@ -9,6 +9,8 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using MahApps.Metro;
+using Microsoft.VisualBasic.Logging;
+
 namespace JoinFs_Flight_Plan_Injector
 {
     /// <summary>
@@ -16,8 +18,9 @@ namespace JoinFs_Flight_Plan_Injector
     /// </summary>
     public partial class MainWindow : Window
     {
-       
+
         // Enable self-contained for built in .net 6.0. Default set to framework dependent
+        BackgroundWorker worker = new BackgroundWorker();
         bool executeMethod;
         logger logger = new logger();
         whazzup whazzup_tfl = new whazzup();
@@ -39,7 +42,7 @@ namespace JoinFs_Flight_Plan_Injector
                     logger.info("LICENSE.txt created!", "MainWindow", "Startup");
                 }
             }
-            if (!File.Exists("tfl-flightplan.sql"))
+            if (!File.Exists("tfl-flightplan.sql") && MyIni.Read("SQL", "Data") == "true")
             {
                 using (StreamWriter sw = File.CreateText("tfl-flightplan.sql"))
                 {
@@ -55,16 +58,11 @@ namespace JoinFs_Flight_Plan_Injector
                     logger.info("ReadMe.txt created!", "MainWindow", "Startup");
                 }
             }
-            if (!File.Exists("Manual.txt")) { }
-            if (!MyIni.KeyExists("DefaultVolume", "Audio"))
-            {
-                MyIni.Write("DefaultVolume", "100", "Audio");
-                MyIni.Write("FSHS", "https://dev.fshs.info", "Web");
-                MyIni.Write("TFL", "https://tflserver.com", "Web");
-                MyIni.Write("VG", "https://vahngomes.dev", "Web");
-                MyIni.Write("version", System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString(), "Data");
-                MyIni.Write("ThreadUpdateSpeed", "500", "Data");
-            }
+            if (!MyIni.KeyExists("FSHS", "Web")){MyIni.Write("FSHS", "https://dev.fshs.info", "Web");}
+            if (!MyIni.KeyExists("TFL", "Web")){MyIni.Write("TFL", "https://tflserver.com", "Web");}
+            if (!MyIni.KeyExists("VG", "Web")){ MyIni.Write("VG", "https://vahngomes.dev", "Web");}
+            if (!MyIni.KeyExists("version", "Data")){MyIni.Write("version", System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString(), "Data");}
+            if (!MyIni.KeyExists("ThreadUpdateSpeed", "Data")){MyIni.Write("ThreadUpdateSpeed", "500", "Data");}
             if (!MyIni.KeyExists("whazzup", "Data"))
             {
                 MyIni.Write("whazzup", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\JoinFS-FSX\\whazzup.txt", "Data");
@@ -73,8 +71,11 @@ namespace JoinFs_Flight_Plan_Injector
             MyIni.Write("whazzup_TFL", "whazzup_TFL.txt", "Data");
             if (!File.Exists(MyIni.Read("whazzup", "Data")))
             {
-
-                MyIni.Write("whazzup", Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\JoinFS-FSX\\whazzup.txt", "Data");
+                string whazzupPath = MyIni.Read("whazzup", "Data");
+                string MyDocuments = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                if (Directory.Exists(MyDocuments + "\\JoinFS-FSX\\whazzup.txt")) { whazzupPath = MyDocuments + "\\JoinFS-FSX\\whazzup.txt"; }
+                else if (Directory.Exists(MyDocuments + "\\JoinFS\\whazzup.txt")) { whazzupPath = MyDocuments + "\\JoinFS\\whazzup.txt"; }
+                MyIni.Write("whazzup", whazzupPath, "Data");
                 logger.error("whazzup file location invalid!", "MainWindow", "Startup");
                 MessageBox.Show("whazzup file location invalid!");
             }
@@ -82,6 +83,8 @@ namespace JoinFs_Flight_Plan_Injector
         }
         protected override void OnClosing(CancelEventArgs e)
         {
+            try { ATC_Display_Data(true); }catch { logger.error("Failed to stop worker", "MainWindow", "Close"); }
+            try { whazzup_tfl.DeleteClients(); }catch { logger.error("Failed to Delete whazzup clients", "MainWindow", "Close"); }
             logger.status("Shutdown completed!\n", "MainWindow", "Suspension");
         }
         public string CurrentPath
@@ -93,7 +96,7 @@ namespace JoinFs_Flight_Plan_Injector
         }
         public void ATC_Display_Data(bool cancel = false)
         {
-            BackgroundWorker worker = new BackgroundWorker();
+            
             if (cancel == true)
             {
                 worker.WorkerReportsProgress = false;
@@ -128,30 +131,29 @@ namespace JoinFs_Flight_Plan_Injector
         }
         void worker_DoWork(object sender, DoWorkEventArgs e)
         {
-            logger.info("Started whazzup_tfl background worker", "MainWindow", "worker_DoWork");
-            for (int i = 0; i < 6000; i++)
+            //Check if there is a request to cancel the process
+            if (worker.CancellationPending)
             {
-                var ThreadSleepTime = MyIni.Read("ThreadUpdateSpeed", "Data");
-                logger.info("Updating Flight Plans", "MainWindow", "worker_DoWork", 5);
-                whazzup_tfl.UpdateWithFlightPlans();
-                try { whazzup_tfl.UpdateWithFlightPlans(); }
-                catch { logger.error("Failed to confirm that whazzup_tfl updated successfully", "MainWindow", "worker_DoWork"); ATC_Display_Data(true); }
-                finally { Thread.Sleep(Convert.ToInt32(ThreadSleepTime)); }
-            }
-            logger.info("Stopped whazzup_tfl background worker", "MainWindow", "worker_DoWork");
-            CheckATC();
-        }
-        void CheckATC()
-        {
-            if (Process.GetProcessesByName("VRC").Length > 0)
-            {
-                // Is running
-                ATC_Display_Data();
+                e.Cancel = true;
+                return;
             }
             else
             {
-                ATC_Display_Data(true);
-            }
+                logger.info("Started whazzup_tfl background worker", "MainWindow", "worker_DoWork");
+                for (int i = 0; i < 6000; i++)
+                {
+                    var ThreadSleepTime = MyIni.Read("ThreadUpdateSpeed", "Data");
+                    logger.info("Updating Flight Plans", "MainWindow", "worker_DoWork", 5);
+                    whazzup_tfl.UpdateWithFlightPlans();
+                    try { whazzup_tfl.UpdateWithFlightPlans(); }
+                    catch { logger.error("Failed to confirm that whazzup_tfl updated successfully", "MainWindow", "worker_DoWork"); ATC_Display_Data(true); }
+                    finally { Thread.Sleep(Convert.ToInt32(ThreadSleepTime)); }
+                }
+                logger.info("Stopped whazzup_tfl background worker", "MainWindow", "worker_DoWork");
+                ButtonControlStartStop.Background = Brushes.Green;
+                ButtonControlStartStop.Content = "START";
+
+            }  
         }
         private void SpecifyWhazzupLocation_Checked(object sender, RoutedEventArgs e)
         {
@@ -221,11 +223,6 @@ namespace JoinFs_Flight_Plan_Injector
         }
         private void Close_Click(object sender, RoutedEventArgs e)
         {
-            try { ATC_Display_Data(true); }
-            catch { logger.error("Failed to stop worker", "MainWindow", "Close"); }
-            try { whazzup_tfl.DeleteClients(); }
-            catch { logger.error("Failed to Delete whazzup clients", "MainWindow", "Close"); }
-            logger.status("Shutdown completed!\n", "MainWindow", "Suspension");
             this.Close();
         }
         private void Update_Click(object sender, RoutedEventArgs e)
@@ -239,21 +236,6 @@ namespace JoinFs_Flight_Plan_Injector
             {
                 logger.error("Failed to manually call whazzup_tfl.UpdateWithFlightPlans()", "MainWindow", "Update");
             }
-        }
-        private void Other_UnChecked(object sender, RoutedEventArgs e)
-        {
-            TFL.IsChecked = true;
-        }
-        private void Other_Checked(object sender, RoutedEventArgs e)
-        {
-            TFL.IsChecked = false;
-        }
-        //not in use
-        private void MainWindow_Settings_Click(object sender, RoutedEventArgs e)
-        {
-            Settings settings = new Settings();
-            settings.Owner = this;
-            settings.Show();
         }
     }
 }
