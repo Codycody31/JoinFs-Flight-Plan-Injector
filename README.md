@@ -40,7 +40,7 @@
     <br />
     <a href="https://vahngomes.dev/products/JoinFs-Flight-Plan-Injector">View Demo</a>
     ·
-    <a href="https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/issues">Report Bug</a>
+    <a href="https://vahngomes.dev/Issue-Tracker/">Report Bug</a>
     ·
     <a href="https://github.com/Codycody31/JoinFs-Flight-Plan-Injector/issues">Request Feature</a>
   </p>

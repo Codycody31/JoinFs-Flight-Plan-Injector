@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\Vahn\\source\\repos\\Injector Updater\\Injector Updater.csproj": {
-      "version": "0.8.5",
+      "version": "0.8.6.3",
       "restore": {
         "projectUniqueName": "C:\\Users\\Vahn\\source\\repos\\Injector Updater\\Injector Updater.csproj",
         "projectName": "Injector Updater",
@@ -78,7 +78,7 @@
       }
     },
     "C:\\Users\\Vahn\\source\\repos\\JoinFs-Flight-Plan-Injector\\JoinFs Flight Plan Injector.csproj": {
-      "version": "0.8.6.2",
+      "version": "0.8.6.3",
       "restore": {
         "projectUniqueName": "C:\\Users\\Vahn\\source\\repos\\JoinFs-Flight-Plan-Injector\\JoinFs Flight Plan Injector.csproj",
         "projectName": "JoinFs Flight Plan Injector",
@@ -162,7 +162,7 @@
       }
     },
     "C:\\Users\\Vahn\\source\\repos\\TFL ATC Portal\\TFL ATC Portal.csproj": {
-      "version": "0.1.0",
+      "version": "0.8.6.3",
       "restore": {
         "projectUniqueName": "C:\\Users\\Vahn\\source\\repos\\TFL ATC Portal\\TFL ATC Portal.csproj",
         "projectName": "TFL ATC Portal",

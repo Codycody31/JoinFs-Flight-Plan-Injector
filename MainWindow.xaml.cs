@@ -227,15 +227,8 @@ namespace JoinFs_Flight_Plan_Injector
         }
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-            logger.info("Manual whazzup updater triggered", "MainWindow", "Update");
-            try
-            {
-                whazzup_tfl.UpdateWithFlightPlans();
-            }
-            catch
-            {
-                logger.error("Failed to manually call whazzup_tfl.UpdateWithFlightPlans()", "MainWindow", "Update");
-            }
+            Process Updater = Process.Start("Injector Updater.exe");
+            this.Close();
         }
     }
 }

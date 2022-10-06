@@ -400,7 +400,7 @@
           }
         }
       },
-      "Injector Updater/0.8.5": {
+      "Injector Updater/0.8.6.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -416,7 +416,7 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "TFL ATC Portal/0.1.0": {
+      "TFL ATC Portal/0.8.6.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -784,7 +784,7 @@
           }
         }
       },
-      "Injector Updater/0.8.5": {
+      "Injector Updater/0.8.6.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -800,7 +800,7 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "TFL ATC Portal/0.1.0": {
+      "TFL ATC Portal/0.8.6.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1481,12 +1481,12 @@
         "version.txt"
       ]
     },
-    "Injector Updater/0.8.5": {
+    "Injector Updater/0.8.6.3": {
       "type": "project",
       "path": "../Injector Updater/Injector Updater.csproj",
       "msbuildProject": "../Injector Updater/Injector Updater.csproj"
     },
-    "TFL ATC Portal/0.1.0": {
+    "TFL ATC Portal/0.8.6.3": {
       "type": "project",
       "path": "../TFL ATC Portal/TFL ATC Portal.csproj",
       "msbuildProject": "../TFL ATC Portal/TFL ATC Portal.csproj"
@@ -1494,10 +1494,10 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Injector Updater >= 0.8.5",
+      "Injector Updater >= 0.8.6.3",
       "MahApps.Metro >= 2.4.9",
       "MySql.Data >= 8.0.30",
-      "TFL ATC Portal >= 0.1.0"
+      "TFL ATC Portal >= 0.8.6.3"
     ]
   },
   "packageFolders": {
@@ -1505,7 +1505,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "0.8.6.2",
+    "version": "0.8.6.3",
     "restore": {
       "projectUniqueName": "C:\\Users\\Vahn\\source\\repos\\JoinFs-Flight-Plan-Injector\\JoinFs Flight Plan Injector.csproj",
       "projectName": "JoinFs Flight Plan Injector",
