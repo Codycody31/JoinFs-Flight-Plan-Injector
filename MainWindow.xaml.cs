@@ -87,7 +87,7 @@ namespace JoinFs_Flight_Plan_Injector
             try { whazzup_tfl.DeleteClients(); }catch { logger.error("Failed to Delete whazzup clients", "MainWindow", "Close"); }
             logger.status("Shutdown completed!\n", "MainWindow", "Suspension");
         }
-        public string CurrentPath
+        public string CurrentVersion
         {
             get
             {
