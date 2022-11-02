@@ -20,7 +20,7 @@
         <SignAssembly>False</SignAssembly>
         <UseWindowsForms>true</UseWindowsForms>
         <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
-        <Version>0.8.6.3</Version>
+        <Version>0.8.6.32</Version>
         <Authors>Vahn Gomes</Authors>
         <Description>A middle-man between JoinFs, and ESJFS to import your groups flightplan data to be displayed in VRC!</Description>
         <Copyright>Copyright © 2022 Vahn Gomes</Copyright>
@@ -28,16 +28,9 @@
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     </PropertyGroup>								
     <ItemGroup>
-        <None Remove="lib\Flight Plan Injector Manual.pdf" />
-        <None Remove="lib\images\Logo2.ico" />
         <None Remove="Logo2.ico" />
     </ItemGroup>
     <ItemGroup>
-    <Content Include="lib\Flight Plan Injector Manual.pdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Resource Include="lib\images\Logo2.ico" />
-	    <Folder Include="lib\images" />
     <Content Include="Logo2.ico" />
     </ItemGroup>
     <ItemGroup>

@@ -9,7 +9,6 @@
         ResizeMode="NoResize"
         WindowState="Normal"
         WindowStyle="SingleBorderWindow"
-        Icon="lib/images/Logo2.ico"
         Title="JoinFs Flight Plan Injector" Height="300" Width="250" Background="Black">
 
     <Grid Margin="0,0,0,0">
